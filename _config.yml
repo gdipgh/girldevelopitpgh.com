@@ -2,4 +2,4 @@ safe: true
 lsi: false
 pygments: true
 
-exclude: [_config.yml, Gemfile, Gemfile.lock, .rvmrc]
+exclude: [_config.yml, Gemfile, Gemfile.lock, .rvmrc, README.md]
