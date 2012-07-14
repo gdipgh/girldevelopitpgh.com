@@ -122,7 +122,7 @@ header #logo a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/gdipgh-logo.png?1341976412');
+  background-image: url('../images/gdipgh-logo.png?1341976412');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 405px;
@@ -170,7 +170,7 @@ header #logo a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/facebook_color.png?1341975675');
+  background-image: url('../images/facebook_color.png?1341975675');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 80px;
@@ -181,7 +181,7 @@ header #logo a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/facebook.png?1341975675');
+  background-image: url('../images/facebook.png?1341975675');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 80px;
@@ -192,7 +192,7 @@ header #logo a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/meetup_color.png?1341976075');
+  background-image: url('../images/meetup_color.png?1341976075');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 80px;
@@ -203,7 +203,7 @@ header #logo a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/meetup.png?1341976075');
+  background-image: url('../images/meetup.png?1341976075');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 80px;
@@ -214,7 +214,7 @@ header #logo a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/twitter_color.png?1341976163');
+  background-image: url('../images/twitter_color.png?1341976163');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 80px;
@@ -225,7 +225,7 @@ header #logo a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/twitter.png?1341976163');
+  background-image: url('../images/twitter.png?1341976163');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 80px;

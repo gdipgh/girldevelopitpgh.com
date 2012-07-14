@@ -4,7 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-@import "compass/utilities/text/replacement";
+@import "compass/typography/text/replacement";
 @import "grid.scss";
 
 $pink: #fe5a62;
@@ -34,7 +34,7 @@ header {
     float: left;
 
     a {
-      @include replace-text-with-dimensions('gdipgh-logo.png');
+      @include replace-text-with-dimensions('gdipgh-logo.png', 50%, 50%);
       display: block;
     }
   }
@@ -69,10 +69,10 @@ header {
         @each $site in facebook, meetup, twitter {
           &.#{$site} {
             a {
-              @include replace-text-with-dimensions('#{$site}_color.png');
+              @include replace-text-with-dimensions('#{$site}_color.png', 50%, 50%);
 
               &:hover {
-                @include replace-text-with-dimensions('#{$site}.png');
+                @include replace-text-with-dimensions('#{$site}.png', 50%, 50%);
               }
             }
           }
