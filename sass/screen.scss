@@ -34,7 +34,7 @@ header {
     float: left;
 
     a {
-      @include replace-text-with-dimensions('../images/gdipgh-logo.png');
+      @include replace-text-with-dimensions('gdipgh-logo.png');
       display: block;
     }
   }
@@ -69,10 +69,10 @@ header {
         @each $site in facebook, meetup, twitter {
           &.#{$site} {
             a {
-              @include replace-text-with-dimensions('../images/#{$site}_color.png');
+              @include replace-text-with-dimensions('#{$site}_color.png');
 
               &:hover {
-                @include replace-text-with-dimensions('../images/#{$site}.png');
+                @include replace-text-with-dimensions('#{$site}.png');
               }
             }
           }
