@@ -67,7 +67,171 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 9, ../sass/screen.scss */
-body h1 {
-  color: red;
+/* line 41, ../sass/grid.scss */
+body {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 27, ../sass/grid.scss */
+body:before, body:after {
+  content: "";
+  display: table;
+}
+/* line 31, ../sass/grid.scss */
+body:after {
+  clear: both;
+}
+
+/* line 17, ../sass/screen.scss */
+body {
+  background-color: #fe5a62;
+  font-family: Helvetica;
+}
+
+/* line 22, ../sass/screen.scss */
+.container {
+  display: block;
+  width: 980.0px;
+  margin: 0 -10px;
+  *zoom: 1;
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 27, ../sass/grid.scss */
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+/* line 31, ../sass/grid.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 28, ../sass/screen.scss */
+header {
+  background-color: #fe5a62;
+  color: white;
+  padding: 10px 0;
+}
+/* line 33, ../sass/screen.scss */
+header #logo {
+  float: left;
+}
+/* line 36, ../sass/screen.scss */
+header #logo a {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/../images/gdipgh-logo.png?1341976412');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 405px;
+  height: 100px;
+  display: block;
+}
+
+/* line 43, ../sass/screen.scss */
+#main {
+  background-color: white;
+  padding: 20px 0;
+}
+
+/* line 48, ../sass/screen.scss */
+#footer-section {
+  background-color: #767495;
+  color: white;
+  padding: 10px 0;
+}
+/* line 53, ../sass/screen.scss */
+#footer-section #mailing-list {
+  display: inline;
+  float: left;
+  width: 460px;
+  margin: 0 10px;
+}
+/* line 57, ../sass/screen.scss */
+#footer-section #social {
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+  margin-left: 170px;
+}
+/* line 61, ../sass/screen.scss */
+#footer-section #social div {
+  margin: 0 10px;
+}
+/* line 66, ../sass/screen.scss */
+#footer-section #social ul li {
+  float: left;
+}
+/* line 71, ../sass/screen.scss */
+#footer-section #social ul li.facebook a {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/../images/facebook_color.png?1341975675');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 80px;
+  height: 80px;
+}
+/* line 74, ../sass/screen.scss */
+#footer-section #social ul li.facebook a:hover {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/../images/facebook.png?1341975675');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 80px;
+  height: 80px;
+}
+/* line 71, ../sass/screen.scss */
+#footer-section #social ul li.meetup a {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/../images/meetup_color.png?1341976075');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 80px;
+  height: 80px;
+}
+/* line 74, ../sass/screen.scss */
+#footer-section #social ul li.meetup a:hover {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/../images/meetup.png?1341976075');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 80px;
+  height: 80px;
+}
+/* line 71, ../sass/screen.scss */
+#footer-section #social ul li.twitter a {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/../images/twitter_color.png?1341976163');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 80px;
+  height: 80px;
+}
+/* line 74, ../sass/screen.scss */
+#footer-section #social ul li.twitter a:hover {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/../images/twitter.png?1341976163');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 80px;
+  height: 80px;
+}
+/* line 81, ../sass/screen.scss */
+#footer-section #social ul li a {
+  display: block;
 }
