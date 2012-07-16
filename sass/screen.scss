@@ -14,6 +14,21 @@ $black: #000;
 
 $primary-font: Helvetica;
 
+@mixin replace-text-with-dimensions-retina($img, $extension: png) {
+  @include replace-text-with-dimensions("#{$img}.#{$extension}");
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+         only screen and (min-device-pixel-ratio: 1.5) {
+
+    $pixel-img: "#{$img}@2x.#{$extension}";
+
+    @include replace-text($pixel-img);
+    background-size: 100% auto;
+    height: image-height($pixel-img) / 2;
+    width: image-width($pixel-img) / 2;
+  }
+}
+
 body {
   background-color: $pink;
   font-family: $primary-font;
@@ -99,10 +114,10 @@ header {
         @each $site in facebook, meetup, twitter {
           &.#{$site} {
             a {
-              @include replace-text-with-dimensions('#{$site}_color.png');
+              @include replace-text-with-dimensions-retina('#{$site}_color');
 
               &:hover {
-                @include replace-text-with-dimensions('#{$site}.png');
+                @include replace-text-with-dimensions-retina('#{$site}');
               }
             }
           }
@@ -117,7 +132,9 @@ header {
 }
 
 #comic {
-  @include replace-text-with-dimensions('gdi-comic.png');
+  @include replace-text-with-dimensions-retina('gdi-comic');
 
   margin: 0 auto;
 }
+
+

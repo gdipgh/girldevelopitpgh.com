@@ -82,13 +82,13 @@ body:after {
   clear: both;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 body {
   background-color: #fe5a62;
   font-family: Helvetica;
 }
 
-/* line 22, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 .container {
   display: block;
   width: 980.0px;
@@ -107,17 +107,17 @@ body {
   clear: both;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
 header {
   background-color: #fe5a62;
   color: white;
   padding: 10px 0;
 }
-/* line 33, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 header #logo {
   float: left;
 }
-/* line 36, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 header #logo a {
   text-indent: -119988px;
   overflow: hidden;
@@ -130,30 +130,30 @@ header #logo a {
   display: block;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 #main {
   background-color: white;
   padding: 20px 0;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 #footer-section {
   background-color: #767495;
   color: white;
   padding: 10px 0;
 }
-/* line 53, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 #footer-section h3 {
   text-transform: uppercase;
 }
-/* line 57, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 #footer-section #mailing-list {
   display: inline;
   float: left;
   width: 220px;
   margin: 0 10px;
 }
-/* line 60, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 #footer-section #mailing-list input[type='email'] {
   background: url('../images/email-icon.png?1342469889') 6px 50% white no-repeat;
   -webkit-border-radius: 4px;
@@ -171,7 +171,7 @@ header #logo a {
   padding: 2px 10px 2px 32px;
   width: 100%;
 }
-/* line 73, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 #footer-section #mailing-list input[type='submit'] {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -187,7 +187,7 @@ header #logo a {
   padding: 0.5em 1em;
   text-transform: uppercase;
 }
-/* line 87, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 #footer-section #social {
   display: inline;
   float: left;
@@ -195,15 +195,15 @@ header #logo a {
   margin: 0 10px;
   margin-left: 410px;
 }
-/* line 91, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 #footer-section #social div {
   margin: 0 10px;
 }
-/* line 96, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 #footer-section #social ul li {
   float: left;
 }
-/* line 101, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 #footer-section #social ul li.facebook a {
   text-indent: -119988px;
   overflow: hidden;
@@ -214,7 +214,21 @@ header #logo a {
   width: 80px;
   height: 80px;
 }
-/* line 104, ../sass/screen.scss */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 116, ../sass/screen.scss */
+  #footer-section #social ul li.facebook a {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/facebook_color@2x.png?1341975675');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 80px;
+    width: 80px;
+  }
+}
+/* line 119, ../sass/screen.scss */
 #footer-section #social ul li.facebook a:hover {
   text-indent: -119988px;
   overflow: hidden;
@@ -225,7 +239,21 @@ header #logo a {
   width: 80px;
   height: 80px;
 }
-/* line 101, ../sass/screen.scss */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 119, ../sass/screen.scss */
+  #footer-section #social ul li.facebook a:hover {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/facebook@2x.png?1341975675');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 80px;
+    width: 80px;
+  }
+}
+/* line 116, ../sass/screen.scss */
 #footer-section #social ul li.meetup a {
   text-indent: -119988px;
   overflow: hidden;
@@ -236,7 +264,21 @@ header #logo a {
   width: 80px;
   height: 80px;
 }
-/* line 104, ../sass/screen.scss */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 116, ../sass/screen.scss */
+  #footer-section #social ul li.meetup a {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/meetup_color@2x.png?1341976075');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 80px;
+    width: 80px;
+  }
+}
+/* line 119, ../sass/screen.scss */
 #footer-section #social ul li.meetup a:hover {
   text-indent: -119988px;
   overflow: hidden;
@@ -247,7 +289,21 @@ header #logo a {
   width: 80px;
   height: 80px;
 }
-/* line 101, ../sass/screen.scss */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 119, ../sass/screen.scss */
+  #footer-section #social ul li.meetup a:hover {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/meetup@2x.png?1341976075');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 80px;
+    width: 80px;
+  }
+}
+/* line 116, ../sass/screen.scss */
 #footer-section #social ul li.twitter a {
   text-indent: -119988px;
   overflow: hidden;
@@ -258,7 +314,21 @@ header #logo a {
   width: 80px;
   height: 80px;
 }
-/* line 104, ../sass/screen.scss */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 116, ../sass/screen.scss */
+  #footer-section #social ul li.twitter a {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/twitter_color@2x.png?1341976163');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 80px;
+    width: 80px;
+  }
+}
+/* line 119, ../sass/screen.scss */
 #footer-section #social ul li.twitter a:hover {
   text-indent: -119988px;
   overflow: hidden;
@@ -269,12 +339,26 @@ header #logo a {
   width: 80px;
   height: 80px;
 }
-/* line 111, ../sass/screen.scss */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 119, ../sass/screen.scss */
+  #footer-section #social ul li.twitter a:hover {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/twitter@2x.png?1341976163');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 80px;
+    width: 80px;
+  }
+}
+/* line 126, ../sass/screen.scss */
 #footer-section #social ul li a {
   display: block;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 #comic {
   text-indent: -119988px;
   overflow: hidden;
@@ -285,4 +369,18 @@ header #logo a {
   width: 790px;
   height: 524px;
   margin: 0 auto;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 134, ../sass/screen.scss */
+  #comic {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/gdi-comic@2x.png?1342463927');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 524.5px;
+    width: 790px;
+  }
 }
