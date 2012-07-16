@@ -122,7 +122,7 @@ header #logo a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/gdipgh-logo.png?1341976412');
+  background-image: url('../images/gdipgh-logo.png?1342245579');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 405px;
@@ -234,4 +234,16 @@ header #logo a {
 /* line 81, ../sass/screen.scss */
 #footer-section #social ul li a {
   display: block;
+}
+
+/* line 89, ../sass/screen.scss */
+#comic {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/gdi-comic.png?1342461943');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 901px;
+  height: 600px;
 }
