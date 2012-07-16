@@ -1,64 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Girl Develop IT Pittsburgh | {{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets/screen.css" />
-  </head>
+  {% include head.html %}
 
   <body>
-    <header>
-      <div class="container">
-        <h1 id="logo">
-          <a href="/">Girl Develop IT Pittsburgh</a>
-        </h1>
-      </div>
-    </header>
+    {% include header.html %}
 
     <div id="main">
       <div class="container">
-        <div id="comic">
-          It can be intimidating for women to learn and ask questions when they are in an extreme minority. While open and welcoming, today's budding developer community is up to 91% male. There isn't a comfortable place where women can learn at their own pace and not be afraid to ask "stupid questions."
-
-          We decided it was time to provide a place where all questions are OK and everyone can learn in a supportive environment. Our courses focus on coding, leveraging existing technology, and having something to show for it (aka building sweet websites).
-
-          Want to learn how to code? Have a great idea? Don't be shy. Develop it.
-        </div>
+        <h1>{{ page.title }}</h1>
         {{ content }}
       </div>
     </div>
 
-    <div id="footer-section">
-      <div class="container">
-        <div id="mailing-list">
-          <!-- Begin MailChimp Signup Form -->
-          <div id="mc_embed_signup">
-            <form action="http://girldevelopitpgh.us5.list-manage2.com/subscribe/post?u=967dd74c2d4b9448479ee69f6&amp;id=6a621ee7dd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-              <h3><label for="mce-EMAIL">join our mailing list</label></h3>
-              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" required>
-              <input type="submit" value="subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-            </form>
-          </div>
-          <!--End mc_embed_signup-->
-        </div>
-
-        <div id="social">
-          <h3>connect with us</h3>
-          <ul>
-            <li class="meetup">
-              <a href="http://www.meetup.com/Girl-Develop-IT-Pittsburgh/">meetup</a>
-            </li>
-            <li class="twitter">
-              <a href="http://twitter.com/#!/gdipgh">twitter</a>
-            </li>
-            <li class="facebook">
-              <a href="http://www.facebook.com/GirlDevelopItPittsburgh">facebook</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <footer>
-    </footer>
+    {% include footer.html %}
   </body>
 </html>
