@@ -241,9 +241,10 @@ header #logo a {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/gdi-comic.png?1342461943');
+  background-image: url('../images/gdi-comic.png?1342464014');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 901px;
-  height: 600px;
+  width: 790px;
+  height: 524px;
+  margin: 0 auto;
 }

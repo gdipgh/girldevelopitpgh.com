@@ -88,4 +88,6 @@ header {
 
 #comic {
   @include replace-text-with-dimensions('gdi-comic.png');
+
+  margin: 0 auto;
 }
