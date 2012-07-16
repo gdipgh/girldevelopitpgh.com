@@ -1,6 +1,6 @@
 safe: true
 lsi: false
 pygments: true
-baseurl: /
+baseurl: /girldevelopitpgh.com
 
 exclude: [_config.yml, config.rb, Gemfile, Gemfile.lock, .rvmrc, Rakefile, README.md, sass]
