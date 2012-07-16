@@ -4,7 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-@import "compass/typography/text/replacement";
+@import "compass";
 @import "grid.scss";
 
 $pink: #fe5a62;
@@ -50,13 +50,43 @@ header {
   color: $white;
   padding: 10px 0;
 
+  h3 {
+    text-transform: uppercase;
+  }
+
   #mailing-list {
-    @include column(6);
+    @include column(3);
+
+    input[type='email'] {
+      @include background(image-url('email-icon.png') 6px 50% $white no-repeat);
+      @include border-radius(4px);
+      @include box-sizing('border-box');
+
+      border: none;
+      float: left;
+      height: 25px;
+      margin: 0.5em 0;
+      padding: 2px 10px 2px 32px;
+      width: 100%;
+    }
+
+    input[type='submit'] {
+      @include border-radius(4px);
+
+      background: $black;
+      border: none;
+      clear: both;
+      color: $white;
+      float: right;
+      margin: 0;
+      padding: 0.5em 1em;
+      text-transform: uppercase;
+    }
   }
 
   #social {
     @include column(4);
-    @include push(2);
+    @include push(5);
 
     div {
       margin: 0 10px;
