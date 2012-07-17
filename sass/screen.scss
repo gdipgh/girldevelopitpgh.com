@@ -192,7 +192,14 @@ header {
 #comic {
   @include replace-text-with-dimensions-retina('gdi-comic');
 
+  background-color: $white;
+  border: solid 2px black;
   margin: 0 auto;
 }
 
+.home {
+  #main {
+    background-color: $pink;
+  }
+}
 
