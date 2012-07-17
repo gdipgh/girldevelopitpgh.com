@@ -4,3 +4,9 @@ pygments: true
 baseurl: /girldevelopitpgh.com
 
 exclude: [_config.yml, config.rb, Gemfile, Gemfile.lock, .rvmrc, Rakefile, README.md, sass]
+
+
+# Custom variables
+
+# List of sites for navigation
+navigation: [Classes, Community, Resources, Team, Blog]

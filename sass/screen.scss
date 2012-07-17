@@ -8,6 +8,7 @@
 @import "grid.scss";
 
 $pink: #fe5a62;
+$red: #893135;
 $blue: #767495;
 $white: #fff;
 $black: #000;
@@ -46,13 +47,51 @@ header {
   padding: 10px 0;
 
   #logo {
+    @include column(6);
+
     float: left;
+    margin-left: 0;
 
     a {
       @include replace-text-with-dimensions('gdipgh-logo.png');
+
+      color: $white;
       display: block;
     }
   }
+
+  .nav {
+    margin-top: 65px;
+    text-transform: uppercase;
+
+    li {
+      float: left;
+      margin: 0 2px;
+    }
+
+    a {
+      @include border-radius(4px);
+      @include transition-duration(0.3s);
+      @include transition-property(all);
+
+      color: $white;
+      padding: 5px 10px;
+      text-decoration: none;
+
+      &:hover {
+        background: $red;
+      }
+
+      &.active {
+        color: $red;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}
 }
 
 #main {
