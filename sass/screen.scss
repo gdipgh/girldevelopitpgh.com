@@ -12,6 +12,8 @@ $red: #893135;
 $blue: #767495;
 $white: #fff;
 $black: #000;
+$grey: #eee;
+$dark-grey: #ccc;
 
 $primary-font: Helvetica;
 
@@ -35,10 +37,14 @@ body {
   font-family: $primary-font;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 .container {
   @include row(12);
-  width: 960px;
   margin: 0 auto;
+  width: 960px;
 }
 
 header {
@@ -92,6 +98,16 @@ header {
     }
   }
 }
+
+#title {
+  background: $grey;
+  border-bottom: solid 1px $dark-grey;
+  font-family: $title-font;
+  padding: 0.5em 0;
+
+  h1 {
+    margin: 0 $gutter-width / 2;
+  }
 }
 
 #main {
