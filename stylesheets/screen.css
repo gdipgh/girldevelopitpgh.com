@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -82,20 +83,25 @@ body:after {
   clear: both;
 }
 
-/* line 32, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 body {
   background-color: #fe5a62;
   font-family: Helvetica;
 }
 
-/* line 37, ../sass/screen.scss */
+/* line 43, ../sass/screen.scss */
+h1 {
+  font-size: 2em;
+}
+
+/* line 47, ../sass/screen.scss */
 .container {
   display: block;
   width: 980.0px;
   margin: 0 -10px;
   *zoom: 1;
-  width: 960px;
   margin: 0 auto;
+  width: 960px;
 }
 /* line 27, ../sass/grid.scss */
 .container:before, .container:after {
@@ -107,17 +113,22 @@ body {
   clear: both;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 header {
   background-color: #fe5a62;
   color: white;
   padding: 10px 0;
 }
-/* line 48, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 header #logo {
+  display: inline;
   float: left;
+  width: 460px;
+  margin: 0 10px;
+  float: left;
+  margin-left: 0;
 }
-/* line 51, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 header #logo a {
   text-indent: -119988px;
   overflow: hidden;
@@ -127,33 +138,95 @@ header #logo a {
   background-position: 50% 50%;
   width: 405px;
   height: 100px;
+  color: white;
   display: block;
 }
+/* line 72, ../sass/screen.scss */
+header .nav {
+  margin-top: 65px;
+  text-transform: uppercase;
+}
+/* line 76, ../sass/screen.scss */
+header .nav li {
+  float: left;
+  margin: 0 2px;
+}
+/* line 81, ../sass/screen.scss */
+header .nav a {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+/* line 90, ../sass/screen.scss */
+header .nav a:hover {
+  background: #893135;
+}
+/* line 94, ../sass/screen.scss */
+header .nav a.active {
+  color: #893135;
+}
+/* line 97, ../sass/screen.scss */
+header .nav a.active:hover {
+  color: white;
+}
 
-/* line 58, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
+#title {
+  background: #eeeeee;
+  border-bottom: solid 1px #cccccc;
+  font-family: "PT Sans", sans-serif;
+  padding: 0.5em 0;
+}
+/* line 111, ../sass/screen.scss */
+#title h1 {
+  margin: 0 10px;
+}
+
+/* line 116, ../sass/screen.scss */
 #main {
   background-color: white;
   padding: 20px 0;
 }
+/* line 120, ../sass/screen.scss */
+#main .content {
+  display: inline;
+  float: left;
+  width: 620px;
+  margin: 0 10px;
+  margin: 0 10px;
+}
 
-/* line 63, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 #footer-section {
   background-color: #767495;
   color: white;
   padding: 10px 0;
 }
-/* line 68, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 #footer-section h3 {
   text-transform: uppercase;
 }
-/* line 72, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 #footer-section #mailing-list {
   display: inline;
   float: left;
   width: 220px;
   margin: 0 10px;
 }
-/* line 75, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 #footer-section #mailing-list input[type='email'] {
   background: url('../images/email-icon.png?1342469889') 6px 50% white no-repeat;
   -webkit-border-radius: 4px;
@@ -171,7 +244,7 @@ header #logo a {
   padding: 2px 10px 2px 32px;
   width: 100%;
 }
-/* line 88, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 #footer-section #mailing-list input[type='submit'] {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -187,7 +260,7 @@ header #logo a {
   padding: 0.5em 1em;
   text-transform: uppercase;
 }
-/* line 102, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 #footer-section #social {
   display: inline;
   float: left;
@@ -195,15 +268,15 @@ header #logo a {
   margin: 0 10px;
   margin-left: 410px;
 }
-/* line 106, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #footer-section #social div {
   margin: 0 10px;
 }
-/* line 111, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 #footer-section #social ul li {
   float: left;
 }
-/* line 116, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 #footer-section #social ul li.facebook a {
   text-indent: -119988px;
   overflow: hidden;
@@ -215,7 +288,7 @@ header #logo a {
   height: 80px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 116, ../sass/screen.scss */
+  /* line 180, ../sass/screen.scss */
   #footer-section #social ul li.facebook a {
     text-indent: -119988px;
     overflow: hidden;
@@ -228,7 +301,7 @@ header #logo a {
     width: 80px;
   }
 }
-/* line 119, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 #footer-section #social ul li.facebook a:hover {
   text-indent: -119988px;
   overflow: hidden;
@@ -240,7 +313,7 @@ header #logo a {
   height: 80px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 119, ../sass/screen.scss */
+  /* line 183, ../sass/screen.scss */
   #footer-section #social ul li.facebook a:hover {
     text-indent: -119988px;
     overflow: hidden;
@@ -253,7 +326,7 @@ header #logo a {
     width: 80px;
   }
 }
-/* line 116, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 #footer-section #social ul li.meetup a {
   text-indent: -119988px;
   overflow: hidden;
@@ -265,7 +338,7 @@ header #logo a {
   height: 80px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 116, ../sass/screen.scss */
+  /* line 180, ../sass/screen.scss */
   #footer-section #social ul li.meetup a {
     text-indent: -119988px;
     overflow: hidden;
@@ -278,7 +351,7 @@ header #logo a {
     width: 80px;
   }
 }
-/* line 119, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 #footer-section #social ul li.meetup a:hover {
   text-indent: -119988px;
   overflow: hidden;
@@ -290,7 +363,7 @@ header #logo a {
   height: 80px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 119, ../sass/screen.scss */
+  /* line 183, ../sass/screen.scss */
   #footer-section #social ul li.meetup a:hover {
     text-indent: -119988px;
     overflow: hidden;
@@ -303,7 +376,7 @@ header #logo a {
     width: 80px;
   }
 }
-/* line 116, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 #footer-section #social ul li.twitter a {
   text-indent: -119988px;
   overflow: hidden;
@@ -315,7 +388,7 @@ header #logo a {
   height: 80px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 116, ../sass/screen.scss */
+  /* line 180, ../sass/screen.scss */
   #footer-section #social ul li.twitter a {
     text-indent: -119988px;
     overflow: hidden;
@@ -328,7 +401,7 @@ header #logo a {
     width: 80px;
   }
 }
-/* line 119, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 #footer-section #social ul li.twitter a:hover {
   text-indent: -119988px;
   overflow: hidden;
@@ -340,7 +413,7 @@ header #logo a {
   height: 80px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 119, ../sass/screen.scss */
+  /* line 183, ../sass/screen.scss */
   #footer-section #social ul li.twitter a:hover {
     text-indent: -119988px;
     overflow: hidden;
@@ -353,12 +426,12 @@ header #logo a {
     width: 80px;
   }
 }
-/* line 126, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 #footer-section #social ul li a {
   display: block;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 #comic {
   text-indent: -119988px;
   overflow: hidden;
@@ -371,7 +444,7 @@ header #logo a {
   margin: 0 auto;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 134, ../sass/screen.scss */
+  /* line 198, ../sass/screen.scss */
   #comic {
     text-indent: -119988px;
     overflow: hidden;
