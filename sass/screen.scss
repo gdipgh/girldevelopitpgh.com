@@ -16,6 +16,10 @@ $grey: #eee;
 $dark-grey: #ccc;
 
 $primary-font: Helvetica;
+@mixin button {
+  @include border-radius(4px);
+  padding: 5px 10px;
+}
 
 @mixin replace-text-with-dimensions-retina($img, $extension: png) {
   @include replace-text-with-dimensions("#{$img}.#{$extension}");
@@ -76,12 +80,11 @@ header {
     }
 
     a {
-      @include border-radius(4px);
+      @include button;
       @include transition-duration(0.3s);
       @include transition-property(all);
 
       color: $white;
-      padding: 5px 10px;
       text-decoration: none;
 
       &:hover {
@@ -141,15 +144,15 @@ header {
     }
 
     input[type='submit'] {
-      @include border-radius(4px);
+      @include button;
 
       background: $black;
       border: none;
       clear: both;
       color: $white;
       float: right;
+      font-size: 0.9em;
       margin: 0;
-      padding: 0.5em 1em;
       text-transform: uppercase;
     }
   }
