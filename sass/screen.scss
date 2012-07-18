@@ -29,11 +29,15 @@ $ribbon-image: 'ribbon.png';
 // Media query breakpoints
 $break-large: 960px;
 $break-medium: 768px;
+$break-medium-small: 540px;
 $break-small: 480px;
 
+// Spacing
+$button-padding: 4px;
+
 @mixin button {
-  @include border-radius(4px);
-  padding: 5px 10px;
+  @include border-radius($button-padding);
+  padding: $button-padding $button-padding * 2;
 }
 
 @mixin replace-text-with-dimensions-retina($img, $extension: png) {
@@ -76,7 +80,7 @@ header {
   padding: 10px 0;
 
   .container {
-    @media only screen and (min-width: 540px) and (max-width: $break-large - 1) {
+    @media only screen and (min-width: $break-medium-small) and (max-width: $break-large - 1) {
       @include column(7);
       display: block;
       float: none;
@@ -92,6 +96,15 @@ header {
 
     @media only screen and (max-width: $break-large - 1) {
       width: auto;
+    }
+
+    @media only screen and (max-width: $break-medium-small - 1) {
+      margin-bottom: $button-padding;
+      width: 100%;
+
+      a {
+        margin: 0 auto;
+      }
     }
 
     a {
@@ -110,29 +123,38 @@ header {
   }
 
   .nav {
-    @media only screen and (min-width: 540px) and (max-width: $break-large - 1) {
-      @include column(1);
-      // width: auto;
-
-      li {
-        margin: 4px 2px;
-      }
-    }
+    @include clearfix();
 
     @media only screen and (min-width: $break-large) {
       @include column(6);
-      margin: 65px 0 0;
+      margin: 60px 0 0;
 
       li {
         margin: 0 2px;
       }
     }
 
+    @media only screen and (min-width: $break-medium-small) and (max-width: $break-large - 1) {
+      @include column(1);
+      // width: auto;
+
+      li {
+        margin: 1px 2px;
+      }
+    }
+
+    @media only screen and (max-width: $break-medium-small - 1) {
+      clear: both;
+      width: 100%;
+    }
+
+
     font-size: 0.9em;
+    text-align: center;
     text-transform: uppercase;
 
     li {
-      float: left;
+      @include inline-block;
     }
 
 
@@ -142,6 +164,7 @@ header {
       @include transition-property(all);
 
       color: $white;
+      display: block;
       text-decoration: none;
 
       &:hover {
