@@ -2,6 +2,7 @@ $(document).ready(function() {
   $('img#comic').imgplayer({
     maxHeight: 471,
     maxWidth: 703,
+    scalable: false,
     frames: [
       [5, 5, 212, 240, {}],
       [5, 219, 241, 240, {}],
