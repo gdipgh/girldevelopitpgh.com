@@ -83,25 +83,21 @@ body:after {
   clear: both;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 body {
   background-color: #fe5a62;
   font-family: Helvetica;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 h1 {
   font-size: 2em;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .container {
-  display: block;
-  width: 980.0px;
-  margin: 0 -10px;
+  width: 100%;
   *zoom: 1;
-  margin: 0 auto;
-  width: 960px;
 }
 /* line 27, ../sass/grid.scss */
 .container:before, .container:after {
@@ -112,14 +108,45 @@ h1 {
 .container:after {
   clear: both;
 }
+@media only screen and (min-width: 960px) {
+  /* line 63, ../sass/screen.scss */
+  .container {
+    display: block;
+    width: 980.0px;
+    margin: 0 -10px;
+    *zoom: 1;
+    margin: 0 auto;
+  }
+  /* line 27, ../sass/grid.scss */
+  .container:before, .container:after {
+    content: "";
+    display: table;
+  }
+  /* line 31, ../sass/grid.scss */
+  .container:after {
+    clear: both;
+  }
+}
 
-/* line 58, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 header {
   background-color: #fe5a62;
   color: white;
   padding: 10px 0;
 }
-/* line 63, ../sass/screen.scss */
+@media only screen and (min-width: 540px) and (max-width: 959px) {
+  /* line 78, ../sass/screen.scss */
+  header .container {
+    display: inline;
+    float: left;
+    width: 540px;
+    margin: 0 10px;
+    display: block;
+    float: none;
+    margin: 0 auto !important;
+  }
+}
+/* line 87, ../sass/screen.scss */
 header #logo {
   display: inline;
   float: left;
@@ -128,30 +155,108 @@ header #logo {
   float: left;
   margin-left: 0;
 }
-/* line 69, ../sass/screen.scss */
+@media only screen and (max-width: 959px) {
+  /* line 87, ../sass/screen.scss */
+  header #logo {
+    width: auto;
+  }
+}
+/* line 97, ../sass/screen.scss */
 header #logo a {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../images/gdipgh-logo.png?1342245579');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 405px;
-  height: 100px;
   color: white;
   display: block;
 }
-/* line 77, ../sass/screen.scss */
+@media only screen and (max-width: 479px) {
+  /* line 97, ../sass/screen.scss */
+  header #logo a {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/gdipgh-logo-small.png?1342568744');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 317px;
+    height: 68px;
+  }
+}
+@media only screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 479px) and (min-device-pixel-ratio: 1.5) {
+  /* line 97, ../sass/screen.scss */
+  header #logo a {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/gdipgh-logo-small@2x.png?1342568744');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 67.5px;
+    width: 317px;
+  }
+}
+@media only screen and (min-width: 480px) {
+  /* line 97, ../sass/screen.scss */
+  header #logo a {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/gdipgh-logo.png?1342568744');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 401px;
+    height: 91px;
+  }
+}
+@media only screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 480px) and (min-device-pixel-ratio: 1.5) {
+  /* line 97, ../sass/screen.scss */
+  header #logo a {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/gdipgh-logo@2x.png?1342568744');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 90.5px;
+    width: 400px;
+  }
+}
+/* line 112, ../sass/screen.scss */
 header .nav {
-  margin-top: 65px;
+  font-size: 0.9em;
   text-transform: uppercase;
 }
-/* line 81, ../sass/screen.scss */
+@media only screen and (min-width: 540px) and (max-width: 959px) {
+  /* line 112, ../sass/screen.scss */
+  header .nav {
+    display: inline;
+    float: left;
+    width: 60px;
+    margin: 0 10px;
+  }
+  /* line 117, ../sass/screen.scss */
+  header .nav li {
+    margin: 4px 2px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /* line 112, ../sass/screen.scss */
+  header .nav {
+    display: inline;
+    float: left;
+    width: 460px;
+    margin: 0 10px;
+    margin: 65px 0 0;
+  }
+  /* line 126, ../sass/screen.scss */
+  header .nav li {
+    margin: 0 2px;
+  }
+}
+/* line 134, ../sass/screen.scss */
 header .nav li {
   float: left;
-  margin: 0 2px;
 }
-/* line 87, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 header .nav a {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -170,37 +275,37 @@ header .nav a {
   color: white;
   text-decoration: none;
 }
-/* line 95, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 header .nav a:hover {
-  background: #893135;
+  background: #7e2d30;
 }
-/* line 99, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 header .nav a.active {
-  color: #893135;
+  color: #7e2d30;
 }
-/* line 102, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 header .nav a.active:hover {
   color: white;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 #title {
   background: #eeeeee;
   border-bottom: solid 1px #cccccc;
   font-family: "PT Sans", sans-serif;
   padding: 0.5em 0;
 }
-/* line 116, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 #title h1 {
   margin: 0 10px;
 }
 
-/* line 121, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 #main {
   background-color: white;
   padding: 20px 0;
 }
-/* line 125, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 #main .content {
   display: inline;
   float: left;
@@ -209,25 +314,291 @@ header .nav a.active:hover {
   margin: 0 10px;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 #footer-section {
   background-color: #767495;
   color: white;
   padding: 10px 0;
 }
-/* line 137, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 #footer-section h3 {
+  background: url('../images/ribbon.png?1342570701') no-repeat 50% 50%;
+  line-height: 30px;
+  margin-bottom: 0.5em;
+  min-width: 255px;
+  text-align: center;
   text-transform: uppercase;
 }
-/* line 141, ../sass/screen.scss */
-#footer-section #mailing-list {
+/* line 216, ../sass/screen.scss */
+#footer-section p, #footer-section form {
+  width: 255px;
+  margin: 0 auto;
+  font-size: 0.9em;
+}
+/* line 222, ../sass/screen.scss */
+#footer-section .about {
   display: inline;
   float: left;
-  width: 220px;
+  width: 300px;
   margin: 0 10px;
 }
-/* line 144, ../sass/screen.scss */
-#footer-section #mailing-list input[type='email'] {
+@media only screen and (min-width: 960px) {
+  /* line 222, ../sass/screen.scss */
+  #footer-section .about {
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 959px) {
+  /* line 222, ../sass/screen.scss */
+  #footer-section .about {
+    margin: 10px auto 20px auto;
+  }
+}
+@media only screen and (max-width: 599px) {
+  /* line 222, ../sass/screen.scss */
+  #footer-section .about {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+}
+/* line 227, ../sass/screen.scss */
+#footer-section .social {
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+}
+@media only screen and (min-width: 960px) {
+  /* line 227, ../sass/screen.scss */
+  #footer-section .social {
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 959px) {
+  /* line 227, ../sass/screen.scss */
+  #footer-section .social {
+    margin: 10px auto 20px auto;
+  }
+}
+@media only screen and (max-width: 599px) {
+  /* line 227, ../sass/screen.scss */
+  #footer-section .social {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+}
+/* line 231, ../sass/screen.scss */
+#footer-section .social div {
+  margin: 0 10px;
+}
+/* line 235, ../sass/screen.scss */
+#footer-section .social ul {
+  text-align: center;
+}
+/* line 238, ../sass/screen.scss */
+#footer-section .social ul li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 243, ../sass/screen.scss */
+#footer-section .social ul li.facebook a {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/facebook_color.png?1341975675');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 80px;
+  height: 80px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 243, ../sass/screen.scss */
+  #footer-section .social ul li.facebook a {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/facebook_color@2x.png?1341975675');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 80px;
+    width: 80px;
+  }
+}
+/* line 246, ../sass/screen.scss */
+#footer-section .social ul li.facebook a:hover {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/facebook.png?1341975675');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 80px;
+  height: 80px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 246, ../sass/screen.scss */
+  #footer-section .social ul li.facebook a:hover {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/facebook@2x.png?1341975675');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 80px;
+    width: 80px;
+  }
+}
+/* line 243, ../sass/screen.scss */
+#footer-section .social ul li.meetup a {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/meetup_color.png?1341976075');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 80px;
+  height: 80px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 243, ../sass/screen.scss */
+  #footer-section .social ul li.meetup a {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/meetup_color@2x.png?1341976075');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 80px;
+    width: 80px;
+  }
+}
+/* line 246, ../sass/screen.scss */
+#footer-section .social ul li.meetup a:hover {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/meetup.png?1341976075');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 80px;
+  height: 80px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 246, ../sass/screen.scss */
+  #footer-section .social ul li.meetup a:hover {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/meetup@2x.png?1341976075');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 80px;
+    width: 80px;
+  }
+}
+/* line 243, ../sass/screen.scss */
+#footer-section .social ul li.twitter a {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/twitter_color.png?1341976163');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 80px;
+  height: 80px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 243, ../sass/screen.scss */
+  #footer-section .social ul li.twitter a {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/twitter_color@2x.png?1341976163');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 80px;
+    width: 80px;
+  }
+}
+/* line 246, ../sass/screen.scss */
+#footer-section .social ul li.twitter a:hover {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/twitter.png?1341976163');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 80px;
+  height: 80px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 246, ../sass/screen.scss */
+  #footer-section .social ul li.twitter a:hover {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/twitter@2x.png?1341976163');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 80px;
+    width: 80px;
+  }
+}
+/* line 253, ../sass/screen.scss */
+#footer-section .social ul li a {
+  display: block;
+}
+/* line 260, ../sass/screen.scss */
+#footer-section .mailing-list {
+  display: inline;
+  float: left;
+  width: 300px;
+  margin: 0 10px;
+  *zoom: 1;
+}
+/* line 27, ../sass/grid.scss */
+#footer-section .mailing-list:before, #footer-section .mailing-list:after {
+  content: "";
+  display: table;
+}
+/* line 31, ../sass/grid.scss */
+#footer-section .mailing-list:after {
+  clear: both;
+}
+@media only screen and (min-width: 960px) {
+  /* line 260, ../sass/screen.scss */
+  #footer-section .mailing-list {
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 959px) {
+  /* line 260, ../sass/screen.scss */
+  #footer-section .mailing-list {
+    margin: 10px auto 20px auto;
+  }
+}
+@media only screen and (max-width: 599px) {
+  /* line 260, ../sass/screen.scss */
+  #footer-section .mailing-list {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+}
+/* line 265, ../sass/screen.scss */
+#footer-section .mailing-list input[type='email'] {
   background: url('../images/email-icon.png?1342487058') 6px 50% white no-repeat;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -244,8 +615,8 @@ header .nav a.active:hover {
   padding: 2px 10px 2px 32px;
   width: 100%;
 }
-/* line 157, ../sass/screen.scss */
-#footer-section #mailing-list input[type='submit'] {
+/* line 278, ../sass/screen.scss */
+#footer-section .mailing-list input[type='submit'] {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -261,207 +632,54 @@ header .nav a.active:hover {
   margin: 0;
   text-transform: uppercase;
 }
-/* line 171, ../sass/screen.scss */
-#footer-section #social {
-  display: inline;
-  float: left;
-  width: 300px;
-  margin: 0 10px;
-  margin-left: 410px;
-}
-/* line 175, ../sass/screen.scss */
-#footer-section #social div {
-  margin: 0 10px;
-}
-/* line 180, ../sass/screen.scss */
-#footer-section #social ul li {
-  float: left;
-}
-/* line 185, ../sass/screen.scss */
-#footer-section #social ul li.facebook a {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../images/facebook_color.png?1341975675');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 80px;
-  height: 80px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 185, ../sass/screen.scss */
-  #footer-section #social ul li.facebook a {
-    text-indent: -119988px;
-    overflow: hidden;
-    text-align: left;
-    background-image: url('../images/facebook_color@2x.png?1341975675');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 100% auto;
-    height: 80px;
-    width: 80px;
-  }
-}
-/* line 188, ../sass/screen.scss */
-#footer-section #social ul li.facebook a:hover {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../images/facebook.png?1341975675');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 80px;
-  height: 80px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 188, ../sass/screen.scss */
-  #footer-section #social ul li.facebook a:hover {
-    text-indent: -119988px;
-    overflow: hidden;
-    text-align: left;
-    background-image: url('../images/facebook@2x.png?1341975675');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 100% auto;
-    height: 80px;
-    width: 80px;
-  }
-}
-/* line 185, ../sass/screen.scss */
-#footer-section #social ul li.meetup a {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../images/meetup_color.png?1341976075');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 80px;
-  height: 80px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 185, ../sass/screen.scss */
-  #footer-section #social ul li.meetup a {
-    text-indent: -119988px;
-    overflow: hidden;
-    text-align: left;
-    background-image: url('../images/meetup_color@2x.png?1341976075');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 100% auto;
-    height: 80px;
-    width: 80px;
-  }
-}
-/* line 188, ../sass/screen.scss */
-#footer-section #social ul li.meetup a:hover {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../images/meetup.png?1341976075');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 80px;
-  height: 80px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 188, ../sass/screen.scss */
-  #footer-section #social ul li.meetup a:hover {
-    text-indent: -119988px;
-    overflow: hidden;
-    text-align: left;
-    background-image: url('../images/meetup@2x.png?1341976075');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 100% auto;
-    height: 80px;
-    width: 80px;
-  }
-}
-/* line 185, ../sass/screen.scss */
-#footer-section #social ul li.twitter a {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../images/twitter_color.png?1341976163');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 80px;
-  height: 80px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 185, ../sass/screen.scss */
-  #footer-section #social ul li.twitter a {
-    text-indent: -119988px;
-    overflow: hidden;
-    text-align: left;
-    background-image: url('../images/twitter_color@2x.png?1341976163');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 100% auto;
-    height: 80px;
-    width: 80px;
-  }
-}
-/* line 188, ../sass/screen.scss */
-#footer-section #social ul li.twitter a:hover {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../images/twitter.png?1341976163');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 80px;
-  height: 80px;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 188, ../sass/screen.scss */
-  #footer-section #social ul li.twitter a:hover {
-    text-indent: -119988px;
-    overflow: hidden;
-    text-align: left;
-    background-image: url('../images/twitter@2x.png?1341976163');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 100% auto;
-    height: 80px;
-    width: 80px;
-  }
-}
-/* line 195, ../sass/screen.scss */
-#footer-section #social ul li a {
-  display: block;
-}
 
-/* line 203, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 #comic {
-  text-indent: -119988px;
-  overflow: hidden;
-  text-align: left;
-  background-image: url('../images/gdi-comic.png?1342464014');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  width: 790px;
-  height: 524px;
-  background-color: white;
-  border: solid 2px black;
+  color: white;
   margin: 0 auto;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 203, ../sass/screen.scss */
+@media only screen and (min-width: 480px) {
+  /* line 293, ../sass/screen.scss */
   #comic {
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background-image: url('../images/gdi-comic@2x.png?1342463927');
+    background-image: url('../images/gdi-comic.png?1342497210');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 701px;
+    height: 465px;
+  }
+}
+@media only screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 480px) and (min-device-pixel-ratio: 1.5) {
+  /* line 293, ../sass/screen.scss */
+  #comic {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/gdi-comic@2x.png?1342497210');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100% auto;
-    height: 524.5px;
-    width: 790px;
+    height: 465px;
+    width: 701px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 700px) {
+  /* line 293, ../sass/screen.scss */
+  #comic {
+    background-position: 50% 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 479px) {
+  /* line 293, ../sass/screen.scss */
+  #comic {
+    background: none;
   }
 }
 
-/* line 212, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 .home #main {
   background-color: #fe5a62;
 }

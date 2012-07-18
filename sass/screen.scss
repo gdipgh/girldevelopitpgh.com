@@ -7,15 +7,30 @@
 @import "compass";
 @import "grid.scss";
 
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+// Colors
+// TODO: Give these more meaningful names
 $pink: #fe5a62;
-$red: #893135;
+$red: #7E2D30;
 $blue: #767495;
 $white: #fff;
 $black: #000;
 $grey: #eee;
 $dark-grey: #ccc;
 
+// Fonts
 $primary-font: Helvetica;
+$title-font: 'PT Sans', sans-serif;
+
+// Images
+$ribbon-image: 'ribbon.png';
+
+// Media query breakpoints
+$break-large: 960px;
+$break-medium: 768px;
+$break-small: 480px;
+
 @mixin button {
   @include border-radius(4px);
   padding: 5px 10px;
@@ -46,9 +61,13 @@ h1 {
 }
 
 .container {
-  @include row(12);
-  margin: 0 auto;
-  width: 960px;
+  width: 100%;
+  @include clearfix;
+
+  @media only screen and (min-width: $break-large) {
+    @include row(12);
+    margin: 0 auto;
+  }
 }
 
 header {
@@ -56,14 +75,34 @@ header {
   color: $white;
   padding: 10px 0;
 
+  .container {
+    @media only screen and (min-width: 540px) and (max-width: $break-large - 1) {
+      @include column(7);
+      display: block;
+      float: none;
+      margin: 0 auto !important;
+    }
+  }
+
   #logo {
     @include column(6);
 
     float: left;
     margin-left: 0;
 
+    @media only screen and (max-width: $break-large - 1) {
+      width: auto;
+    }
+
     a {
-      @include replace-text-with-dimensions('gdipgh-logo.png');
+      @media only screen and (max-width: $break-small - 1) {
+        @include replace-text-with-dimensions-retina('gdipgh-logo-small');
+      }
+
+      @media only screen and (min-width: $break-small) {
+        @include replace-text-with-dimensions-retina('gdipgh-logo');
+      }
+
 
       color: $white;
       display: block;
@@ -71,13 +110,31 @@ header {
   }
 
   .nav {
-    margin-top: 65px;
+    @media only screen and (min-width: 540px) and (max-width: $break-large - 1) {
+      @include column(1);
+      // width: auto;
+
+      li {
+        margin: 4px 2px;
+      }
+    }
+
+    @media only screen and (min-width: $break-large) {
+      @include column(6);
+      margin: 65px 0 0;
+
+      li {
+        margin: 0 2px;
+      }
+    }
+
+    font-size: 0.9em;
     text-transform: uppercase;
 
     li {
       float: left;
-      margin: 0 2px;
     }
+
 
     a {
       @include button;
@@ -116,6 +173,29 @@ header {
 #main {
   background-color: $white;
   padding: 20px 0;
+
+  .content {
+    @include column(8);
+
+    margin: 0 $gutter-width / 2;
+  }
+}
+
+@mixin footer-section-item{
+  @media only screen and (min-width: $break-large) {
+    margin: 10px;
+  }
+
+  @media only screen and (max-width: $break-large - 1) {
+    margin: 10px auto 20px auto;
+  }
+
+  @media only screen and (max-width: 600px - 1) {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
 }
 
 #footer-section {
@@ -124,11 +204,63 @@ header {
   padding: 10px 0;
 
   h3 {
+    @include background(image-url($ribbon-image) no-repeat 50% 50%);
+
+    line-height: image-height($ribbon-image);
+    margin-bottom: 0.5em;
+    min-width: image-width($ribbon-image);
+    text-align: center;
     text-transform: uppercase;
   }
 
-  #mailing-list {
-    @include column(3);
+  p, form {
+    width: image-width($ribbon-image);
+    margin: 0 auto;
+    font-size: 0.9em;
+  }
+
+  .about {
+    @include column(4);
+    @include footer-section-item;
+  }
+
+  .social {
+    @include column(4);
+    @include footer-section-item;
+
+    div {
+      margin: 0 10px;
+    }
+
+    ul {
+      text-align: center;
+
+      li {
+        @include inline-block;
+
+        @each $site in facebook, meetup, twitter {
+          &.#{$site} {
+            a {
+              @include replace-text-with-dimensions-retina('#{$site}_color');
+
+              &:hover {
+                @include replace-text-with-dimensions-retina('#{$site}');
+              }
+            }
+          }
+        }
+
+        a {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .mailing-list {
+    @include column(4);
+    @include clearfix();
+    @include footer-section-item;
 
     input[type='email'] {
       @include background(image-url('email-icon.png') 6px 50% $white no-repeat);
@@ -156,45 +288,24 @@ header {
       text-transform: uppercase;
     }
   }
-
-  #social {
-    @include column(4);
-    @include push(5);
-
-    div {
-      margin: 0 10px;
-    }
-
-    ul {
-      li {
-        float: left;
-
-        @each $site in facebook, meetup, twitter {
-          &.#{$site} {
-            a {
-              @include replace-text-with-dimensions-retina('#{$site}_color');
-
-              &:hover {
-                @include replace-text-with-dimensions-retina('#{$site}');
-              }
-            }
-          }
-        }
-
-        a {
-          display: block;
-        }
-      }
-    }
-  }
 }
 
 #comic {
-  @include replace-text-with-dimensions-retina('gdi-comic');
-
-  background-color: $white;
-  border: solid 2px black;
+  color: $white;
   margin: 0 auto;
+
+  @media only screen and (min-width: $break-small) {
+    @include replace-text-with-dimensions-retina('gdi-comic');
+  }
+
+  @media only screen and (min-width: $break-small) and (max-width: 700px) {
+    background-position: 50% 0;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: $break-small - 1) {
+    background: none;
+  }
 }
 
 .home {
