@@ -292,20 +292,23 @@ header {
 
 #comic {
   color: $white;
+  display: block;
   margin: 0 auto;
+  width: image-width('gdi-comic.png');
+  height: image-height('gdi-comic.png');
 
-  @media only screen and (min-width: $break-small) {
-    @include replace-text-with-dimensions-retina('gdi-comic');
-  }
+  // @media only screen and (min-width: $break-small) {
+  //   @include replace-text-with-dimensions-retina('gdi-comic');
+  // }
 
-  @media only screen and (min-width: $break-small) and (max-width: 700px) {
-    background-position: 50% 0;
-    width: 100%;
-  }
+  // @media only screen and (min-width: $break-small) and (max-width: 700px) {
+  //   background-position: 50% 0;
+  //   width: 100%;
+  // }
 
-  @media only screen and (max-width: $break-small - 1) {
-    background: none;
-  }
+  // @media only screen and (max-width: $break-small - 1) {
+  //   background: none;
+  // }
 }
 
 .home {
