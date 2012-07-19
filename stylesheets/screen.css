@@ -766,3 +766,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
 .home #main {
   background-color: #fe5a62;
 }
+/* line 400, ../sass/screen.scss */
+.home #main .container {
+  padding: 0;
+}

@@ -396,6 +396,10 @@ header {
 .home {
   #main {
     background-color: $pink;
+
+    .container {
+      padding: 0;
+    }
   }
 }
 
