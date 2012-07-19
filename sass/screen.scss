@@ -207,6 +207,14 @@ header {
   padding: 20px 0;
   position: relative;
 
+  .container {
+    @media only screen and (min-width: $break-mobile-land + 1) and (max-width: $break-large - 1) {
+      position: relative;
+      width: auto;
+      padding-right: image-width($ribbon-image) + $ribbon-padding * 2;
+    }
+  }
+
   .content {
     display: block;
     margin: 0 $gutter-width / 2;
@@ -216,7 +224,8 @@ header {
     }
 
     @media only screen and (min-width: $break-mobile-land + 1) and (max-width: $break-large - 1) {
-      margin-right: image-width($ribbon-image) + $ribbon-padding * 2;
+      float: left;
+      width: 100%;
     }
 
     @media only screen and (max-width: $break-mobile-land) {
@@ -242,10 +251,8 @@ header {
     }
 
     @media only screen and (min-width: $break-mobile-land + 1) and (max-width: $break-large - 1) {
-      margin: $gutter-width auto 0 auto;
-      position: absolute;
-      right: $gutter-width;
-      top: $gutter-width;
+      float: left;
+      margin-right: -1 * (image-width($ribbon-image) + $ribbon-padding * 2);
     }
 
     @media only screen and (max-width: $break-mobile-land) {
