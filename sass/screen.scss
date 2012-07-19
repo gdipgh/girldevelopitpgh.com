@@ -209,13 +209,15 @@ header {
   position: relative;
 
   .content {
-    @include column(8);
+    display: block;
+    margin: 0 $gutter-width / 2;
 
-    @media only screen and (max-width: $break-large - 1) {
-      display: block;
-      float: none;
+    @media only screen and (min-width: $break-large) {
+      @include column(8);
+    }
+
+    @media only screen and (min-width: $break-mobile-land + 1) and (max-width: $break-large - 1) {
       margin-right: image-width($ribbon-image) + $ribbon-padding * 2;
-      width: auto;
     }
 
     @media only screen and (max-width: $break-mobile-land) {
@@ -226,23 +228,25 @@ header {
   .sidebar {
     @include border-radius(4px);
     @include box-sizing(border-box);
-    @include column(4);
 
     background-color: $pink;
-    float: right;
-    margin: $gutter-width;
+    display: block;
+    margin: $gutter-width auto 0 auto;
     padding: $gutter-width;
     padding-top: image-height($ribbon-image) + $gutter-width / 2;
     position: relative;
     width: image-width($ribbon-image) - $ribbon-padding;
 
-    @media only screen and (max-width: $break-large - 1) {
-      display: block;
-      float: none;
+    @media only screen and (min-width: $break-large) {
+      float: right;
+      margin: $gutter-width;
+    }
+
+    @media only screen and (min-width: $break-mobile-land + 1) and (max-width: $break-large - 1) {
       margin: $gutter-width auto 0 auto;
       position: absolute;
       right: $gutter-width;
-      top: 0;
+      top: $gutter-width;
     }
 
     @media only screen and (max-width: $break-mobile-land) {
