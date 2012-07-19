@@ -1,3 +1,5 @@
+@import "compass";
+
 /* Basic */
 .imgplayer-frame {
   position:relative;
@@ -55,12 +57,23 @@
 #imgplayer-nav a.button:active { background-color: #7E2D30; }
 #imgplayer-nav a.button.active { background-color: #7E2D30; color: #000; }
 #imgplayer-nav { display: block;  }
-#imgplayer-nav li { display: inline; list-style: none; margin: 0; padding: 0; }
+#imgplayer-nav li {
+  @include inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 #imgplayer-nav {
   position:relative;
   margin: 20px auto 0 auto;
 }
-#imgplayer-nav ul { display: block; margin: 0 auto; list-style:none; position:relative; left:42%; }
+#imgplayer-nav ul {
+  display: block;
+  margin: 0 auto;
+  list-style:none;
+  position:relative;
+  text-align: center;
+}
 #imgplayer-nav ul li a.button { display: block; float: left; font-size: 0.4em; border-radius: 40px; -moz-border-radius: 40px; -webkit-border-radius: 40px; text-indent: -100px; width: 14px; height: 14px; overflow: hidden; padding: 0; margin: 0 0.2em; }
 #skip-navi { clear: both; dispay: block; margin: 10px auto; padding: 15px 0; }
 #imgplayer-data { background-color:#111; padding: 10px; text-align: left; position: fixed; bottom: 20px; right: 20px; font-size: 12px;  font-family: monaco; letter-spacing: 0px; font-weight: normal; color: #ccc; }
