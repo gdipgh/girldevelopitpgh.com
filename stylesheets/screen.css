@@ -446,11 +446,11 @@ header .nav a.active:hover {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/facebook_color.png?1341975675');
+  background-image: url('../images/facebook_color.png?1342656852');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 80px;
-  height: 80px;
+  width: 61px;
+  height: 62px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* line 266, ../sass/screen.scss */
@@ -458,12 +458,12 @@ header .nav a.active:hover {
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background-image: url('../images/facebook_color@2x.png?1341975675');
+    background-image: url('../images/facebook_color@2x.png?1342656852');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100% auto;
-    height: 80px;
-    width: 80px;
+    height: 61px;
+    width: 61.5px;
   }
 }
 /* line 269, ../sass/screen.scss */
@@ -471,11 +471,11 @@ header .nav a.active:hover {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/facebook.png?1341975675');
+  background-image: url('../images/facebook.png?1342656852');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 80px;
-  height: 80px;
+  width: 61px;
+  height: 62px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* line 269, ../sass/screen.scss */
@@ -483,12 +483,12 @@ header .nav a.active:hover {
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background-image: url('../images/facebook@2x.png?1341975675');
+    background-image: url('../images/facebook@2x.png?1342656852');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100% auto;
-    height: 80px;
-    width: 80px;
+    height: 61px;
+    width: 61.5px;
   }
 }
 /* line 266, ../sass/screen.scss */
@@ -496,11 +496,11 @@ header .nav a.active:hover {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/meetup_color.png?1341976075');
+  background-image: url('../images/meetup_color.png?1342656660');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 80px;
-  height: 80px;
+  width: 62px;
+  height: 62px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* line 266, ../sass/screen.scss */
@@ -508,12 +508,12 @@ header .nav a.active:hover {
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background-image: url('../images/meetup_color@2x.png?1341976075');
+    background-image: url('../images/meetup_color@2x.png?1342656660');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100% auto;
-    height: 80px;
-    width: 80px;
+    height: 61px;
+    width: 61px;
   }
 }
 /* line 269, ../sass/screen.scss */
@@ -521,11 +521,11 @@ header .nav a.active:hover {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/meetup.png?1341976075');
+  background-image: url('../images/meetup.png?1342656660');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 80px;
-  height: 80px;
+  width: 62px;
+  height: 62px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* line 269, ../sass/screen.scss */
@@ -533,12 +533,12 @@ header .nav a.active:hover {
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background-image: url('../images/meetup@2x.png?1341976075');
+    background-image: url('../images/meetup@2x.png?1342656660');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100% auto;
-    height: 80px;
-    width: 80px;
+    height: 61px;
+    width: 61px;
   }
 }
 /* line 266, ../sass/screen.scss */
@@ -546,11 +546,11 @@ header .nav a.active:hover {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/twitter_color.png?1341976163');
+  background-image: url('../images/twitter_color.png?1342656674');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 80px;
-  height: 80px;
+  width: 61px;
+  height: 62px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* line 266, ../sass/screen.scss */
@@ -558,12 +558,12 @@ header .nav a.active:hover {
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background-image: url('../images/twitter_color@2x.png?1341976163');
+    background-image: url('../images/twitter_color@2x.png?1342656674');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100% auto;
-    height: 80px;
-    width: 80px;
+    height: 61px;
+    width: 61.5px;
   }
 }
 /* line 269, ../sass/screen.scss */
@@ -571,11 +571,11 @@ header .nav a.active:hover {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/twitter.png?1341976163');
+  background-image: url('../images/twitter.png?1342656674');
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  width: 80px;
-  height: 80px;
+  width: 61px;
+  height: 62px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* line 269, ../sass/screen.scss */
@@ -583,12 +583,12 @@ header .nav a.active:hover {
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background-image: url('../images/twitter@2x.png?1341976163');
+    background-image: url('../images/twitter@2x.png?1342656674');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100% auto;
-    height: 80px;
-    width: 80px;
+    height: 61px;
+    width: 61.5px;
   }
 }
 /* line 276, ../sass/screen.scss */
