@@ -28,8 +28,14 @@
 .imgplayer-frame .controls a:hover {  }
 .imgplayer-frame .controls a.left { float:left; text-align: left; width: 50%; }
 .imgplayer-frame .controls a.right { float:right; text-align: right; width: 50%; }
-.imgplayer-frame .controls a.left:hover { background-image: image-url('imgplayer/arrow.left.png'); background-position: left center; }
-.imgplayer-frame .controls a.right:hover { background-image: image-url('imgplayer/arrow.right.png'); background-position: right center; }
+.imgplayer-frame .controls a.left:hover {
+  background-image: image-url('imgplayer/imgplayer-left.png');
+  background-position: left center;
+}
+.imgplayer-frame .controls a.right:hover {
+  background-image: image-url('imgplayer/imgplayer-right.png');
+  background-position: right center;
+}
 .imgplayer-frame .controls a.next { text-align: center; width: 100%; }
 .imgplayer-frame .controls a.prev { text-align: center; width: 100%; }
 .imgplayer-frame .controls a.next:hover { background-image: image-url('imgplayer/arrow.next.png'); background-position: center center; }
@@ -45,12 +51,15 @@
 #imgplayer-nav { display: block; margin-top: 8px; }
 #imgplayer-nav a.button { margin: 0; padding: 0.4em 0.8em; color: #444; background-color: #222; -moz-border-radius: 2px; -webkit-border-radius: 2px; cursor: pointer; -moz-user-select:none; -webkit-user-select: none; user-select:none; }
 #imgplayer-nav a.button-large { margin: 0; padding: 0.6em 1em; font-weight: bold; color: #333; background-color: #222; border: 0px solid #222; -moz-border-radius: 0.5em; -webkit-border-radius: 0.5em; float: right; }
-#imgplayer-nav a.button:hover { background-color: #555; color: #000; }
-#imgplayer-nav a.button:active { background-color: #555; }
-#imgplayer-nav a.button.active { background-color: #555; color: #000; }
+#imgplayer-nav a.button:hover { background-color: #7E2D30; color: #000; }
+#imgplayer-nav a.button:active { background-color: #7E2D30; }
+#imgplayer-nav a.button.active { background-color: #7E2D30; color: #000; }
 #imgplayer-nav { display: block;  }
 #imgplayer-nav li { display: inline; list-style: none; margin: 0; padding: 0; }
-#imgplayer-nav { float:right; position:relative; left:-50%; text-align:left; }
+#imgplayer-nav {
+  position:relative;
+  margin: 20px auto 0 auto;
+}
 #imgplayer-nav ul { display: block; margin: 0 auto; list-style:none; position:relative; left:42%; }
 #imgplayer-nav ul li a.button { display: block; float: left; font-size: 0.4em; border-radius: 40px; -moz-border-radius: 40px; -webkit-border-radius: 40px; text-indent: -100px; width: 14px; height: 14px; overflow: hidden; padding: 0; margin: 0 0.2em; }
 #skip-navi { clear: both; dispay: block; margin: 10px auto; padding: 15px 0; }

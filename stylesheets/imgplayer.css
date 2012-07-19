@@ -70,48 +70,48 @@
 
 /* line 31, ../sass/imgplayer.scss */
 .imgplayer-frame .controls a.left:hover {
-  background-image: url('../images/imgplayer/arrow.left.png?1342583037');
+  background-image: url('../images/imgplayer/imgplayer-left.png');
   background-position: left center;
 }
 
-/* line 32, ../sass/imgplayer.scss */
+/* line 35, ../sass/imgplayer.scss */
 .imgplayer-frame .controls a.right:hover {
-  background-image: url('../images/imgplayer/arrow.right.png?1342583037');
+  background-image: url('../images/imgplayer/imgplayer-right.png');
   background-position: right center;
 }
 
-/* line 33, ../sass/imgplayer.scss */
+/* line 39, ../sass/imgplayer.scss */
 .imgplayer-frame .controls a.next {
   text-align: center;
   width: 100%;
 }
 
-/* line 34, ../sass/imgplayer.scss */
+/* line 40, ../sass/imgplayer.scss */
 .imgplayer-frame .controls a.prev {
   text-align: center;
   width: 100%;
 }
 
-/* line 35, ../sass/imgplayer.scss */
+/* line 41, ../sass/imgplayer.scss */
 .imgplayer-frame .controls a.next:hover {
   background-image: url('../images/imgplayer/arrow.next.png?1342583037');
   background-position: center center;
 }
 
-/* line 36, ../sass/imgplayer.scss */
+/* line 42, ../sass/imgplayer.scss */
 .imgplayer-frame .controls a.prev:hover {
   background-image: url('../images/imgplayer/arrow.prev.png?1342583037');
   background-position: center center;
 }
 
-/* line 38, ../sass/imgplayer.scss */
+/* line 44, ../sass/imgplayer.scss */
 .imgplayer-frame .controls.autoplay-pause {
   color: #666;
   font-size: 18px;
 }
 
 /* Fullscreen */
-/* line 42, ../sass/imgplayer.scss */
+/* line 48, ../sass/imgplayer.scss */
 .imgplayer-fullscreen-bg {
   background-color: #000;
   width: 100%;
@@ -122,13 +122,13 @@
 }
 
 /* Navigation */
-/* line 45, ../sass/imgplayer.scss */
+/* line 51, ../sass/imgplayer.scss */
 #imgplayer-nav {
   display: block;
   margin-top: 8px;
 }
 
-/* line 46, ../sass/imgplayer.scss */
+/* line 52, ../sass/imgplayer.scss */
 #imgplayer-nav a.button {
   margin: 0;
   padding: 0.4em 0.8em;
@@ -142,7 +142,7 @@
   user-select: none;
 }
 
-/* line 47, ../sass/imgplayer.scss */
+/* line 53, ../sass/imgplayer.scss */
 #imgplayer-nav a.button-large {
   margin: 0;
   padding: 0.6em 1em;
@@ -155,29 +155,29 @@
   float: right;
 }
 
-/* line 48, ../sass/imgplayer.scss */
+/* line 54, ../sass/imgplayer.scss */
 #imgplayer-nav a.button:hover {
-  background-color: #555;
+  background-color: #7E2D30;
   color: #000;
 }
 
-/* line 49, ../sass/imgplayer.scss */
+/* line 55, ../sass/imgplayer.scss */
 #imgplayer-nav a.button:active {
-  background-color: #555;
+  background-color: #7E2D30;
 }
 
-/* line 50, ../sass/imgplayer.scss */
+/* line 56, ../sass/imgplayer.scss */
 #imgplayer-nav a.button.active {
-  background-color: #555;
+  background-color: #7E2D30;
   color: #000;
 }
 
-/* line 51, ../sass/imgplayer.scss */
+/* line 57, ../sass/imgplayer.scss */
 #imgplayer-nav {
   display: block;
 }
 
-/* line 52, ../sass/imgplayer.scss */
+/* line 58, ../sass/imgplayer.scss */
 #imgplayer-nav li {
   display: inline;
   list-style: none;
@@ -185,15 +185,13 @@
   padding: 0;
 }
 
-/* line 53, ../sass/imgplayer.scss */
+/* line 59, ../sass/imgplayer.scss */
 #imgplayer-nav {
-  float: right;
   position: relative;
-  left: -50%;
-  text-align: left;
+  margin: 20px auto 0 auto;
 }
 
-/* line 54, ../sass/imgplayer.scss */
+/* line 63, ../sass/imgplayer.scss */
 #imgplayer-nav ul {
   display: block;
   margin: 0 auto;
@@ -202,7 +200,7 @@
   left: 42%;
 }
 
-/* line 55, ../sass/imgplayer.scss */
+/* line 64, ../sass/imgplayer.scss */
 #imgplayer-nav ul li a.button {
   display: block;
   float: left;
@@ -218,7 +216,7 @@
   margin: 0 0.2em;
 }
 
-/* line 56, ../sass/imgplayer.scss */
+/* line 65, ../sass/imgplayer.scss */
 #skip-navi {
   clear: both;
   dispay: block;
@@ -226,7 +224,7 @@
   padding: 15px 0;
 }
 
-/* line 57, ../sass/imgplayer.scss */
+/* line 66, ../sass/imgplayer.scss */
 #imgplayer-data {
   background-color: #111;
   padding: 10px;
@@ -241,7 +239,7 @@
   color: #ccc;
 }
 
-/* line 58, ../sass/imgplayer.scss */
+/* line 67, ../sass/imgplayer.scss */
 .skip-tooltip {
   top: 20%;
   z-index: 1000;
