@@ -28,16 +28,30 @@ $ribbon-image: 'ribbon.png';
 
 // Media query breakpoints
 $break-large: 960px;
-$break-medium: 768px;
-$break-medium-small: 540px;
-$break-small: 480px;
+$break-tablet-port: 768px;
+$break-header: 540px;
+$break-mobile-land: 480px;
+$break-mobile-port: 320px;
 
 // Spacing
 $button-padding: 4px;
+$ribbon-padding: 16px;
 
 @mixin button {
   @include border-radius($button-padding);
   padding: $button-padding $button-padding * 2;
+}
+
+@mixin ribbon {
+  @include background(image-url($ribbon-image) no-repeat 50% 50%);
+  border: none;
+  color: $white;
+  font-size: 1em;
+  line-height: image-height($ribbon-image);
+  margin: 0 0 0.5em 0;
+  min-width: image-width($ribbon-image);
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @mixin replace-text-with-dimensions-retina($img, $extension: png) {
@@ -61,7 +75,24 @@ body {
 }
 
 h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  border-bottom: solid 1px $red;
+  color: $red;
   font-size: 2em;
+  margin: 0 0 1em 0;
+}
+
+h3 {
+  color: $red;
+  font-size: 1.3em;
+  margin: 1em 0;
+}
+
+p{
+  margin: 1em 0;
 }
 
 .container {
@@ -80,7 +111,7 @@ header {
   padding: 10px 0;
 
   .container {
-    @media only screen and (min-width: $break-medium-small) and (max-width: $break-large - 1) {
+    @media only screen and (min-width: $break-header) and (max-width: $break-large - 1) {
       @include column(7);
       display: block;
       float: none;
@@ -98,7 +129,7 @@ header {
       width: auto;
     }
 
-    @media only screen and (max-width: $break-medium-small - 1) {
+    @media only screen and (max-width: $break-header - 1) {
       margin-bottom: $button-padding;
       width: 100%;
 
@@ -108,11 +139,11 @@ header {
     }
 
     a {
-      @media only screen and (max-width: $break-small - 1) {
+      @media only screen and (max-width: $break-mobile-land - 1) {
         @include replace-text-with-dimensions-retina('gdipgh-logo-small');
       }
 
-      @media only screen and (min-width: $break-small) {
+      @media only screen and (min-width: $break-mobile-land) {
         @include replace-text-with-dimensions-retina('gdipgh-logo');
       }
 
@@ -134,7 +165,7 @@ header {
       }
     }
 
-    @media only screen and (min-width: $break-medium-small) and (max-width: $break-large - 1) {
+    @media only screen and (min-width: $break-header) and (max-width: $break-large - 1) {
       @include column(1);
       // width: auto;
 
@@ -143,11 +174,10 @@ header {
       }
     }
 
-    @media only screen and (max-width: $break-medium-small - 1) {
+    @media only screen and (max-width: $break-header - 1) {
       clear: both;
       width: 100%;
     }
-
 
     font-size: 0.9em;
     text-align: center;
@@ -156,7 +186,6 @@ header {
     li {
       @include inline-block;
     }
-
 
     a {
       @include button;
@@ -167,40 +196,67 @@ header {
       display: block;
       text-decoration: none;
 
-      &:hover {
+      &:hover, &:active, &.active {
         background: $red;
       }
-
-      &.active {
-        color: $red;
-
-        &:hover {
-          color: $white;
-        }
-      }
     }
-  }
-}
-
-#title {
-  background: $grey;
-  border-bottom: solid 1px $dark-grey;
-  font-family: $title-font;
-  padding: 0.5em 0;
-
-  h1 {
-    margin: 0 $gutter-width / 2;
   }
 }
 
 #main {
   background-color: $white;
   padding: 20px 0;
+  position: relative;
 
   .content {
     @include column(8);
 
-    margin: 0 $gutter-width / 2;
+    @media only screen and (max-width: $break-large - 1) {
+      display: block;
+      float: none;
+      margin-right: image-width($ribbon-image) + $ribbon-padding * 2;
+      width: auto;
+    }
+
+    @media only screen and (max-width: $break-mobile-land) {
+      margin-right: $gutter-width / 2;
+    }
+  }
+
+  .sidebar {
+    @include border-radius(4px);
+    @include box-sizing(border-box);
+    @include column(4);
+
+    background-color: $pink;
+    float: right;
+    margin: $gutter-width;
+    padding: $gutter-width;
+    padding-top: image-height($ribbon-image) + $gutter-width / 2;
+    position: relative;
+    width: image-width($ribbon-image) - $ribbon-padding;
+
+    @media only screen and (max-width: $break-large - 1) {
+      display: block;
+      float: none;
+      margin: $gutter-width auto 0 auto;
+      position: absolute;
+      right: $gutter-width;
+      top: 0;
+    }
+
+    @media only screen and (max-width: $break-mobile-land) {
+      position: relative;
+      right: auto;
+    }
+
+    h3 {
+      @include ribbon;
+
+      left: $ribbon-padding / 2 * -1;
+      position: absolute;
+      top: 0;
+    }
   }
 }
 
@@ -218,7 +274,6 @@ header {
     float: none;
     width: 100%;
   }
-
 }
 
 #footer-section {
@@ -227,13 +282,7 @@ header {
   padding: 10px 0;
 
   h3 {
-    @include background(image-url($ribbon-image) no-repeat 50% 50%);
-
-    line-height: image-height($ribbon-image);
-    margin-bottom: 0.5em;
-    min-width: image-width($ribbon-image);
-    text-align: center;
-    text-transform: uppercase;
+    @include ribbon;
   }
 
   p, form {
@@ -320,16 +369,16 @@ header {
   width: image-width('gdi-comic.png');
   height: image-height('gdi-comic.png');
 
-  // @media only screen and (min-width: $break-small) {
+  // @media only screen and (min-width: $break-mobile-land) {
   //   @include replace-text-with-dimensions-retina('gdi-comic');
   // }
 
-  // @media only screen and (min-width: $break-small) and (max-width: 700px) {
+  // @media only screen and (min-width: $break-mobile-land) and (max-width: 700px) {
   //   background-position: 50% 0;
   //   width: 100%;
   // }
 
-  // @media only screen and (max-width: $break-small - 1) {
+  // @media only screen and (max-width: $break-mobile-land - 1) {
   //   background: none;
   // }
 }
