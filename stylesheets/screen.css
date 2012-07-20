@@ -772,6 +772,34 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
 }
 
 /* line 393, ../sass/screen.scss */
+#gdi-network {
+  color: white;
+  text-align: center;
+}
+/* line 397, ../sass/screen.scss */
+#gdi-network li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  list-style: disc;
+  text-transform: uppercase;
+}
+/* line 402, ../sass/screen.scss */
+#gdi-network li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 10px;
+}
+/* line 407, ../sass/screen.scss */
+#gdi-network li a:hover {
+  color: #7e2d30;
+  text-decoration: underline;
+}
+
+/* line 415, ../sass/screen.scss */
 #comic {
   color: white;
   display: block;
@@ -780,11 +808,11 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   height: 471px;
 }
 
-/* line 415, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 .home #main {
   background-color: #fe5a62;
 }
-/* line 418, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 .home #main .container {
   padding: 0;
 }

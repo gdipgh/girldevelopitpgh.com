@@ -390,6 +390,28 @@ header {
   }
 }
 
+#gdi-network {
+  color: $white;
+  text-align: center;
+
+  li {
+    @include inline-block;
+    list-style: disc;
+    text-transform: uppercase;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      margin-left: 10px;
+
+      &:hover {
+        color: $red;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
 #comic {
   color: $white;
   display: block;
