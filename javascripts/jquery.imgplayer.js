@@ -43,7 +43,7 @@
 					marginTop: 	'-' + target.top + 'px',
 					marginLeft: '-' + target.left + 'px',
 					width: 		target.imgWidth,
-					height: 	target.imgHeight,
+					height: 	target.imgHeight
 				})
 
 				// Wrap image in frame
