@@ -20,8 +20,7 @@ $grey: #eee;
 $dark-grey: #ccc;
 
 // Fonts
-$primary-font: Helvetica;
-$title-font: 'PT Sans', sans-serif;
+$primary-font: "proxima-nova", sans-serif;
 
 // Images
 $ribbon-image: 'ribbon.png';
@@ -46,7 +45,7 @@ $ribbon-padding: 16px;
   @include background(image-url($ribbon-image) no-repeat 50% 50%);
   border: none;
   color: $white;
-  font-size: 1em;
+  font-size: 18px;
   line-height: image-height($ribbon-image);
   margin: 0 0 0.5em 0;
   min-width: image-width($ribbon-image);
@@ -72,27 +71,43 @@ $ribbon-padding: 16px;
 body {
   background-color: $pink;
   font-family: $primary-font;
+  line-height: 1.3;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 250%;
 }
 
 h2 {
   border-bottom: solid 1px $red;
   color: $red;
-  font-size: 2em;
+  font-size: 32px;
+  font-weight: 600;
   margin: 0 0 1em 0;
 }
 
 h3 {
   color: $red;
-  font-size: 1.3em;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 1em 0 0.5em 0;
+}
+
+h4 {
+  color: $red;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 1em 0 0.5em 0;
+}
+
+p, ul {
   margin: 1em 0;
 }
 
-p{
-  margin: 1em 0;
+ul {
+  li {
+    margin: 0 0 0.25em 0;
+  }
 }
 
 .container {
@@ -178,7 +193,7 @@ header {
       width: 100%;
     }
 
-    font-size: 0.9em;
+    font-size: 90%;
     text-align: center;
     text-transform: uppercase;
 
@@ -206,6 +221,11 @@ header {
   background-color: $white;
   padding: 20px 0;
   position: relative;
+
+  ul {
+    list-style: disc;
+    margin-left: 2em;
+  }
 
   .container {
     @media only screen and (min-width: $break-mobile-land + 1) and (max-width: $break-large - 1) {
@@ -239,6 +259,7 @@ header {
 
     background-color: $pink;
     display: block;
+    font-size: 90%;
     margin: $gutter-width auto 0 auto;
     padding: $gutter-width;
     padding-top: image-height($ribbon-image) + $gutter-width / 2;
@@ -260,7 +281,7 @@ header {
       right: auto;
     }
 
-    h3 {
+    h4 {
       @include ribbon;
 
       left: $ribbon-padding / 2 * -1;
@@ -291,14 +312,14 @@ header {
   color: $white;
   padding: 10px 0;
 
-  h3 {
+  h4 {
     @include ribbon;
   }
 
   p, form {
     width: image-width($ribbon-image);
     margin: 0 auto;
-    font-size: 0.9em;
+    font-size: 90%;
   }
 
   .about {
@@ -365,7 +386,7 @@ header {
       clear: both;
       color: $white;
       float: right;
-      font-size: 0.9em;
+      font-size: 90%;
       margin: 0;
       text-transform: uppercase;
     }
