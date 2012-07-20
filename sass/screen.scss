@@ -7,8 +7,6 @@
 @import "compass";
 @import "grid.scss";
 
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
-
 // Colors
 // TODO: Give these more meaningful names
 $pink: #fe5a62;
@@ -155,9 +153,7 @@ header {
     }
 
     a {
-      @media only screen and (max-width: $break-mobile-land - 1) {
-        @include replace-text-with-dimensions-retina('gdipgh-logo-small');
-      }
+      @include replace-text-with-dimensions-retina('gdipgh-logo-small');
 
       @media only screen and (min-width: $break-mobile-land) {
         @include replace-text-with-dimensions-retina('gdipgh-logo');

@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -83,19 +82,19 @@ body:after {
   clear: both;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 body {
   background-color: #fe5a62;
   font-family: "proxima-nova", sans-serif;
   line-height: 1.3;
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 h1 {
   font-size: 250%;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 h2 {
   border-bottom: solid 1px #7e2d30;
   color: #7e2d30;
@@ -104,7 +103,7 @@ h2 {
   margin: 0 0 1em 0;
 }
 
-/* line 90, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 h3 {
   color: #7e2d30;
   font-size: 26px;
@@ -112,7 +111,7 @@ h3 {
   margin: 1em 0 0.5em 0;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 h4 {
   color: #7e2d30;
   font-size: 20px;
@@ -120,17 +119,17 @@ h4 {
   margin: 1em 0 0.5em 0;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 p, ul {
   margin: 1em 0;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 ul li {
   margin: 0 0 0.25em 0;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .container {
   width: 100%;
   *zoom: 1;
@@ -145,7 +144,7 @@ ul li {
   clear: both;
 }
 @media only screen and (min-width: 960px) {
-  /* line 114, ../sass/screen.scss */
+  /* line 112, ../sass/screen.scss */
   .container {
     display: block;
     width: 980.0px;
@@ -164,14 +163,14 @@ ul li {
   }
 }
 
-/* line 124, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 header {
   background-color: #fe5a62;
   color: white;
   padding: 10px 0;
 }
 @media only screen and (min-width: 540px) and (max-width: 959px) {
-  /* line 129, ../sass/screen.scss */
+  /* line 127, ../sass/screen.scss */
   header .container {
     display: inline;
     float: left;
@@ -182,7 +181,7 @@ header {
     margin: 0 auto !important;
   }
 }
-/* line 138, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 header #logo {
   display: inline;
   float: left;
@@ -192,42 +191,37 @@ header #logo {
   margin-left: 0;
 }
 @media only screen and (max-width: 959px) {
-  /* line 138, ../sass/screen.scss */
+  /* line 136, ../sass/screen.scss */
   header #logo {
     width: auto;
   }
 }
 @media only screen and (max-width: 539px) {
-  /* line 138, ../sass/screen.scss */
+  /* line 136, ../sass/screen.scss */
   header #logo {
     margin-bottom: 4px;
     width: 100%;
   }
-  /* line 152, ../sass/screen.scss */
+  /* line 150, ../sass/screen.scss */
   header #logo a {
     margin: 0 auto;
   }
 }
-/* line 157, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 header #logo a {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/gdipgh-logo-small.png?1342568744');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 317px;
+  height: 68px;
   color: white;
   display: block;
 }
-@media only screen and (max-width: 479px) {
-  /* line 157, ../sass/screen.scss */
-  header #logo a {
-    text-indent: -119988px;
-    overflow: hidden;
-    text-align: left;
-    background-image: url('../images/gdipgh-logo-small.png?1342568744');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    width: 317px;
-    height: 68px;
-  }
-}
-@media only screen and (max-width: 479px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 479px) and (min-device-pixel-ratio: 1.5) {
-  /* line 157, ../sass/screen.scss */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 155, ../sass/screen.scss */
   header #logo a {
     text-indent: -119988px;
     overflow: hidden;
@@ -241,7 +235,7 @@ header #logo a {
   }
 }
 @media only screen and (min-width: 480px) {
-  /* line 157, ../sass/screen.scss */
+  /* line 155, ../sass/screen.scss */
   header #logo a {
     text-indent: -119988px;
     overflow: hidden;
@@ -254,7 +248,7 @@ header #logo a {
   }
 }
 @media only screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 480px) and (min-device-pixel-ratio: 1.5) {
-  /* line 157, ../sass/screen.scss */
+  /* line 155, ../sass/screen.scss */
   header #logo a {
     text-indent: -119988px;
     overflow: hidden;
@@ -267,7 +261,7 @@ header #logo a {
     width: 400px;
   }
 }
-/* line 171, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 header .nav {
   *zoom: 1;
   font-size: 90%;
@@ -284,7 +278,7 @@ header .nav:after {
   clear: both;
 }
 @media only screen and (min-width: 960px) {
-  /* line 171, ../sass/screen.scss */
+  /* line 167, ../sass/screen.scss */
   header .nav {
     display: inline;
     float: left;
@@ -292,32 +286,32 @@ header .nav:after {
     margin: 0 10px;
     margin: 60px 0 0;
   }
-  /* line 178, ../sass/screen.scss */
+  /* line 174, ../sass/screen.scss */
   header .nav li {
     margin: 0 2px;
   }
 }
 @media only screen and (min-width: 540px) and (max-width: 959px) {
-  /* line 171, ../sass/screen.scss */
+  /* line 167, ../sass/screen.scss */
   header .nav {
     display: inline;
     float: left;
     width: 60px;
     margin: 0 10px;
   }
-  /* line 187, ../sass/screen.scss */
+  /* line 183, ../sass/screen.scss */
   header .nav li {
     margin: 1px 2px;
   }
 }
 @media only screen and (max-width: 539px) {
-  /* line 171, ../sass/screen.scss */
+  /* line 167, ../sass/screen.scss */
   header .nav {
     clear: both;
     width: 100%;
   }
 }
-/* line 201, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 header .nav li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -326,7 +320,7 @@ header .nav li {
   zoom: 1;
   *display: inline;
 }
-/* line 205, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 header .nav a {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -346,37 +340,37 @@ header .nav a {
   display: block;
   text-decoration: none;
 }
-/* line 214, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 header .nav a:hover, header .nav a:active, header .nav a.active {
   background: #7e2d30;
 }
 
-/* line 221, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 #main {
   background-color: white;
   padding: 20px 0;
   position: relative;
 }
-/* line 226, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 #main ul {
   list-style: disc;
   margin-left: 2em;
 }
 @media only screen and (min-width: 481px) and (max-width: 959px) {
-  /* line 231, ../sass/screen.scss */
+  /* line 227, ../sass/screen.scss */
   #main .container {
     position: relative;
     width: auto;
     padding-right: 287px;
   }
 }
-/* line 239, ../sass/screen.scss */
+/* line 235, ../sass/screen.scss */
 #main .content {
   display: block;
   margin: 0 10px;
 }
 @media only screen and (min-width: 960px) {
-  /* line 239, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   #main .content {
     display: inline;
     float: left;
@@ -385,19 +379,19 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 959px) {
-  /* line 239, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   #main .content {
     float: left;
     width: 100%;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 239, ../sass/screen.scss */
+  /* line 235, ../sass/screen.scss */
   #main .content {
     margin-right: 10px;
   }
 }
-/* line 257, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 #main .sidebar {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -417,27 +411,27 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   width: 239px;
 }
 @media only screen and (min-width: 960px) {
-  /* line 257, ../sass/screen.scss */
+  /* line 253, ../sass/screen.scss */
   #main .sidebar {
     float: right;
     margin: 20px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 959px) {
-  /* line 257, ../sass/screen.scss */
+  /* line 253, ../sass/screen.scss */
   #main .sidebar {
     float: left;
     margin-right: -287px;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 257, ../sass/screen.scss */
+  /* line 253, ../sass/screen.scss */
   #main .sidebar {
     position: relative;
     right: auto;
   }
 }
-/* line 285, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 #main .sidebar h4 {
   background: url('../images/ribbon.png?1342570701') no-repeat 50% 50%;
   border: none;
@@ -454,13 +448,13 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   top: 0;
 }
 
-/* line 311, ../sass/screen.scss */
+/* line 307, ../sass/screen.scss */
 #footer-section {
   background-color: #767495;
   color: white;
   padding: 10px 0;
 }
-/* line 316, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 #footer-section h4 {
   background: url('../images/ribbon.png?1342570701') no-repeat 50% 50%;
   border: none;
@@ -473,13 +467,13 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 320, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 #footer-section p, #footer-section form {
   width: 255px;
   margin: 0 auto;
   font-size: 90%;
 }
-/* line 326, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 #footer-section .about {
   display: inline;
   float: left;
@@ -487,26 +481,26 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   margin: 0 10px;
 }
 @media only screen and (min-width: 960px) {
-  /* line 326, ../sass/screen.scss */
+  /* line 322, ../sass/screen.scss */
   #footer-section .about {
     margin: 10px;
   }
 }
 @media only screen and (max-width: 959px) {
-  /* line 326, ../sass/screen.scss */
+  /* line 322, ../sass/screen.scss */
   #footer-section .about {
     margin: 10px auto 20px auto;
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 326, ../sass/screen.scss */
+  /* line 322, ../sass/screen.scss */
   #footer-section .about {
     display: block;
     float: none;
     width: 100%;
   }
 }
-/* line 331, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 #footer-section .social {
   display: inline;
   float: left;
@@ -514,34 +508,34 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   margin: 0 10px;
 }
 @media only screen and (min-width: 960px) {
-  /* line 331, ../sass/screen.scss */
+  /* line 327, ../sass/screen.scss */
   #footer-section .social {
     margin: 10px;
   }
 }
 @media only screen and (max-width: 959px) {
-  /* line 331, ../sass/screen.scss */
+  /* line 327, ../sass/screen.scss */
   #footer-section .social {
     margin: 10px auto 20px auto;
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 331, ../sass/screen.scss */
+  /* line 327, ../sass/screen.scss */
   #footer-section .social {
     display: block;
     float: none;
     width: 100%;
   }
 }
-/* line 335, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 #footer-section .social div {
   margin: 0 10px;
 }
-/* line 339, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 #footer-section .social ul {
   text-align: center;
 }
-/* line 342, ../sass/screen.scss */
+/* line 338, ../sass/screen.scss */
 #footer-section .social ul li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -550,7 +544,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   zoom: 1;
   *display: inline;
 }
-/* line 347, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 #footer-section .social ul li.facebook a {
   text-indent: -119988px;
   overflow: hidden;
@@ -562,7 +556,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   height: 62px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 347, ../sass/screen.scss */
+  /* line 343, ../sass/screen.scss */
   #footer-section .social ul li.facebook a {
     text-indent: -119988px;
     overflow: hidden;
@@ -575,7 +569,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
     width: 61.5px;
   }
 }
-/* line 350, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 #footer-section .social ul li.facebook a:hover {
   text-indent: -119988px;
   overflow: hidden;
@@ -587,7 +581,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   height: 62px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 350, ../sass/screen.scss */
+  /* line 346, ../sass/screen.scss */
   #footer-section .social ul li.facebook a:hover {
     text-indent: -119988px;
     overflow: hidden;
@@ -600,7 +594,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
     width: 61.5px;
   }
 }
-/* line 347, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 #footer-section .social ul li.meetup a {
   text-indent: -119988px;
   overflow: hidden;
@@ -612,7 +606,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   height: 62px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 347, ../sass/screen.scss */
+  /* line 343, ../sass/screen.scss */
   #footer-section .social ul li.meetup a {
     text-indent: -119988px;
     overflow: hidden;
@@ -625,7 +619,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
     width: 61px;
   }
 }
-/* line 350, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 #footer-section .social ul li.meetup a:hover {
   text-indent: -119988px;
   overflow: hidden;
@@ -637,7 +631,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   height: 62px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 350, ../sass/screen.scss */
+  /* line 346, ../sass/screen.scss */
   #footer-section .social ul li.meetup a:hover {
     text-indent: -119988px;
     overflow: hidden;
@@ -650,7 +644,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
     width: 61px;
   }
 }
-/* line 347, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 #footer-section .social ul li.twitter a {
   text-indent: -119988px;
   overflow: hidden;
@@ -662,7 +656,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   height: 62px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 347, ../sass/screen.scss */
+  /* line 343, ../sass/screen.scss */
   #footer-section .social ul li.twitter a {
     text-indent: -119988px;
     overflow: hidden;
@@ -675,7 +669,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
     width: 61.5px;
   }
 }
-/* line 350, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 #footer-section .social ul li.twitter a:hover {
   text-indent: -119988px;
   overflow: hidden;
@@ -687,7 +681,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   height: 62px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 350, ../sass/screen.scss */
+  /* line 346, ../sass/screen.scss */
   #footer-section .social ul li.twitter a:hover {
     text-indent: -119988px;
     overflow: hidden;
@@ -700,11 +694,11 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
     width: 61.5px;
   }
 }
-/* line 357, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 #footer-section .social ul li a {
   display: block;
 }
-/* line 364, ../sass/screen.scss */
+/* line 360, ../sass/screen.scss */
 #footer-section .mailing-list {
   display: inline;
   float: left;
@@ -722,26 +716,26 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   clear: both;
 }
 @media only screen and (min-width: 960px) {
-  /* line 364, ../sass/screen.scss */
+  /* line 360, ../sass/screen.scss */
   #footer-section .mailing-list {
     margin: 10px;
   }
 }
 @media only screen and (max-width: 959px) {
-  /* line 364, ../sass/screen.scss */
+  /* line 360, ../sass/screen.scss */
   #footer-section .mailing-list {
     margin: 10px auto 20px auto;
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 364, ../sass/screen.scss */
+  /* line 360, ../sass/screen.scss */
   #footer-section .mailing-list {
     display: block;
     float: none;
     width: 100%;
   }
 }
-/* line 369, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 #footer-section .mailing-list input[type='email'] {
   background: url('../images/email-icon.png?1342487058') 6px 50% white no-repeat;
   -webkit-border-radius: 4px;
@@ -759,7 +753,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   padding: 2px 10px 2px 32px;
   width: 100%;
 }
-/* line 382, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 #footer-section .mailing-list input[type='submit'] {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -777,7 +771,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   text-transform: uppercase;
 }
 
-/* line 397, ../sass/screen.scss */
+/* line 393, ../sass/screen.scss */
 #comic {
   color: white;
   display: block;
@@ -786,11 +780,11 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   height: 471px;
 }
 
-/* line 419, ../sass/screen.scss */
+/* line 415, ../sass/screen.scss */
 .home #main {
   background-color: #fe5a62;
 }
-/* line 422, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 .home #main .container {
   padding: 0;
 }
