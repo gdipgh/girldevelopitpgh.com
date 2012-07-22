@@ -724,6 +724,56 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
     width: 61.5px;
   }
 }
+/* line 371, ../sass/screen.scss */
+#footer-section .social ul li.github a {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/github_color.png?1342916626');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 61px;
+  height: 62px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 371, ../sass/screen.scss */
+  #footer-section .social ul li.github a {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/github_color@2x.png?1342916626');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 61px;
+    width: 61.5px;
+  }
+}
+/* line 374, ../sass/screen.scss */
+#footer-section .social ul li.github a:hover {
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('../images/github.png?1342916626');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 61px;
+  height: 62px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 374, ../sass/screen.scss */
+  #footer-section .social ul li.github a:hover {
+    text-indent: -119988px;
+    overflow: hidden;
+    text-align: left;
+    background-image: url('../images/github@2x.png?1342916626');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    height: 61px;
+    width: 61.5px;
+  }
+}
 /* line 381, ../sass/screen.scss */
 #footer-section .social ul li a {
   display: block;

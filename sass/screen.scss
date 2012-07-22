@@ -366,7 +366,7 @@ header {
       li {
         @include inline-block;
 
-        @each $site in facebook, meetup, twitter {
+        @each $site in facebook, meetup, twitter, github {
           &.#{$site} {
             a {
               @include replace-text-with-dimensions-retina('#{$site}_color');
