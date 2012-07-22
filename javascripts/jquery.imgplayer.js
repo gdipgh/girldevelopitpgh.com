@@ -192,6 +192,9 @@
 		frameClassName: 		'imgplayer-frame',
 		framesNavElement: 		'#imgplayer-nav',
 
+		scalableUp:   true,
+		scalableDown: true,
+
 		maxHeight: 				$(window).height() - 250,	// Maximum height of the frame.
 		maxWidth: 				$(window).width() - 200,	// Maximum width of the frame.
 
@@ -389,16 +392,20 @@
 		var ip = $.imgplayer,
 			t  = target;
 
-		if($.imgplayer.options.scalable){
-			diffX = $.imgplayer.options.maxWidth / target.width;
-			diffY = $.imgplayer.options.maxHeight / target.height;
-		}
-		else {
-			diffX = 1;
-			diffY = 1;
-		}
+		diffX = $.imgplayer.options.maxWidth / target.width;
+		diffY = $.imgplayer.options.maxHeight / target.height;
 
 		var diff = (diffX < diffY) ? diffX : diffY;
+
+		// Undo up-scaling if configured not to scale up
+		if(diff > 1 && !$.imgplayer.options.scalableUp) {
+			diff = 1;
+		}
+
+		// Undo down-scaling if configured not to scale down
+		if(diff < 1 && !$.imgplayer.options.scalableDown) {
+			diff = 1;
+		}
 
 		t.width 	= t.width * diff;
 		t.height 	= t.height * diff;

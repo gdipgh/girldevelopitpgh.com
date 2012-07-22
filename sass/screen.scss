@@ -18,7 +18,19 @@ $grey: #eee;
 $dark-grey: #ccc;
 
 // Fonts
+/* Foundation Icons General Enclosed */
+@font-face {
+    font-family: 'FoundationIconsGeneralEnclosed';
+    src: url('fonts/foundation-icons-general-enclosed.eot');
+    src: url('fonts/foundation-icons-general-enclosed.eot?#iefix') format('embedded-opentype'),
+         url('fonts/foundation-icons-general-enclosed.woff') format('woff'),
+         url('fonts/foundation-icons-general-enclosed.ttf') format('truetype'),
+         url('fonts/foundation-icons-general-enclosed.svg#FoundationIconsGeneralEnclosed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 $primary-font: "proxima-nova", sans-serif;
+$icon-font: "FoundationIconsGeneralEnclosed";
 
 // Images
 $ribbon-image: 'ribbon.png';
@@ -438,6 +450,24 @@ header {
       }
     }
   }
+}
+
+#comic-left, #comic-right {
+  cursor: pointer;
+  display: block;
+  font-family: $icon-font;
+  font-size: 40px;
+  height: 100px;
+  line-height: 2;
+  margin-top: $gutter-width;
+}
+
+#comic-left {
+  float: left;
+}
+
+#comic-right {
+  float: right;
 }
 
 #comic {
