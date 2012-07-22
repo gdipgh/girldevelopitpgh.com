@@ -729,7 +729,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/github_color.png?1342916626');
+  background-image: url('../images/github_color.png?1342917380');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 61px;
@@ -741,7 +741,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background-image: url('../images/github_color@2x.png?1342916626');
+    background-image: url('../images/github_color@2x.png?1342917380');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100% auto;
@@ -754,7 +754,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('../images/github.png?1342916626');
+  background-image: url('../images/github.png?1342917380');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 61px;
@@ -766,7 +766,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
     text-indent: -119988px;
     overflow: hidden;
     text-align: left;
-    background-image: url('../images/github@2x.png?1342916626');
+    background-image: url('../images/github@2x.png?1342917380');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100% auto;
@@ -816,7 +816,7 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   }
 }
 /* line 393, ../sass/screen.scss */
-#footer-section .mailing-list input[type='email'] {
+#footer-section .mailing-list input.email {
   background: url('../images/email-icon.png?1342487058') 6px 50% white no-repeat;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -827,14 +827,14 @@ header .nav a:hover, header .nav a:active, header .nav a.active {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: none;
-  float: left;
+  float: right;
   height: 25px;
   margin: 0.5em 0;
   padding: 2px 10px 2px 32px;
-  width: 100%;
+  width: 255px;
 }
 /* line 406, ../sass/screen.scss */
-#footer-section .mailing-list input[type='submit'] {
+#footer-section .mailing-list input.button {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
