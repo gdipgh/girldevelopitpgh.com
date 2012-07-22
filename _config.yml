@@ -9,4 +9,4 @@ exclude: [_config.yml, config.rb, Gemfile, Gemfile.lock, .rvmrc, Rakefile, READM
 # Custom variables
 
 # List of sites for navigation
-navigation: [Classes, Community, Resources, About, Blog]
+navigation: [Classes, Community, Resources, About]
