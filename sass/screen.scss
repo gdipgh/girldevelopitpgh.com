@@ -34,6 +34,7 @@ $icon-font: "FoundationIconsGeneralEnclosed";
 
 // Images
 $ribbon-image: 'ribbon.png';
+$ribbon-large-image: 'ribbon-large.png';
 
 // Media query breakpoints
 $break-large: 960px;
@@ -252,6 +253,11 @@ header {
       position: relative;
       width: auto;
       padding-right: image-width($ribbon-image) + $ribbon-padding * 2;
+
+      &.no-sidebar {
+        margin-right: $gutter-width / 2;
+        padding-right: $gutter-width / 2;
+      }
     }
   }
 
@@ -261,6 +267,10 @@ header {
 
     @media only screen and (min-width: $break-large) {
       @include column(8);
+
+      &.no-sidebar {
+        @include column(12);
+      }
     }
 
     @media only screen and (min-width: $break-mobile-land + 1) and (max-width: $break-large - 1) {
@@ -452,6 +462,7 @@ header {
   }
 }
 
+// Home page
 #comic-left, #comic-right {
   cursor: pointer;
   display: block;
@@ -500,4 +511,3 @@ header {
     }
   }
 }
-

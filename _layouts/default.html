@@ -6,14 +6,16 @@
     {% include header.html %}
 
     <div id="main">
-      <div class="container">
-        <div class="content">
+      <div class="container {% if page.hidesidebar == true %}no-sidebar{% endif %}">
+        <div class="content {% if page.hidesidebar == true %}no-sidebar{% endif %}">
           <h2>{{ page.title }}</h2>
           {{ content }}
         </div>
-        <div class="sidebar">
-          {% include survey.html %}
-        </div>
+        {% if page.hidesidebar != true %}
+          <div class="sidebar">
+            {% include survey.html %}
+          </div>
+        {% endif %}
       </div>
     </div>
 
