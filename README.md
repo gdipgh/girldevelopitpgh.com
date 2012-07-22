@@ -12,6 +12,10 @@ This site uses [Github Pages](http://pages.github.com/) and [Jekyll](https://git
     $ cd girldevelopitpgh.com
     $ bundle install
     
+## Make local changes to config
+
+Temporarily remove the baseurl setting from _config.yml to make links work.  DO NOT push this change.  The line is needed for things to work properly on github pages.
+    
 ### Start the server
   The site uses Jekyll to create pages.  To preview locally as you develop, use the command below.
 
