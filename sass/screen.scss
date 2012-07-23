@@ -52,15 +52,15 @@ $ribbon-padding: 16px;
   padding: $button-padding $button-padding * 2;
 }
 
-@mixin ribbon {
-  @include background(image-url($ribbon-image) no-repeat 50% 50%);
+@mixin ribbon($image: $ribbon-image) {
+  @include background(image-url('#{$image}') no-repeat 50% 50%);
   border: none;
   color: $white;
   font-size: 18px;
   font-weight: 400;
-  line-height: image-height($ribbon-image);
+  line-height: image-height($image);
   margin: 0 0 0.5em 0;
-  min-width: image-width($ribbon-image);
+  min-width: image-width($image);
   text-align: center;
   text-transform: uppercase;
 }
@@ -349,14 +349,21 @@ header {
 
   &.primary {
     background-color: $blue;
+
+    h4 {
+      @include ribbon;
+    }
+  }
+
+  &.secondary {
+    h4 {
+      @include ribbon("ribbon-light.png");
+      color: $pink;
+    }
   }
 
   color: $white;
   padding: 10px 0;
-
-  h4 {
-    @include ribbon;
-  }
 
   p, form {
     width: image-width($ribbon-image);
