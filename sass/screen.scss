@@ -345,8 +345,12 @@ header {
   }
 }
 
-#footer-section {
-  background-color: $blue;
+.footer-section {
+
+  &.primary {
+    background-color: $blue;
+  }
+
   color: $white;
   padding: 10px 0;
 
@@ -361,23 +365,25 @@ header {
   }
 
   a {
-    color: $black;
+    color: $white;
     text-decoration: underline;
 
     &:hover {
-      color: $white;
+      color: $black;
     }
   }
 
-  .about {
+ .social, .mailing-list, .contact {
+    @include column(4);
+    @include footer-section-item;
+  }
+
+  .about, .sponsors, .survey {
     @include column(4);
     @include footer-section-item;
   }
 
   .social {
-    @include column(4);
-    @include footer-section-item;
-
     div {
       margin: 0 10px;
     }
@@ -408,9 +414,7 @@ header {
   }
 
   .mailing-list {
-    @include column(4);
     @include clearfix();
-    @include footer-section-item;
 
     input.email {
       @include background(image-url('email-icon.png') 6px 50% $white no-repeat);
